@@ -1,5 +1,69 @@
-@import "../../base/base-style.scss";
+@import "../../global.scss";
 
-a{
-    text-decoration: none; 
+
+.header-section{
+    nav{
+        padding: 1% 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        position: relative;
+        background-color: $white;
+        @media screen and (max-width:601px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo{
+            width: 100%;
+            img{
+                height: 100%;
+            }
+        }
+        .main-menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            animation: menu 0.3s linear;
+            @media screen and (max-width:601px) {
+                display: none;
+            }
+            a{
+                color: $text-dark;
+                font-weight: 600;
+                margin: 0 1%;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover{
+                    color: $primary;
+                }
+                @media screen and (max-width:601px) {
+                    margin: 5% 0;
+                    display: block;
+                }
+            }
+        }
+        .menu-btn{
+            position: absolute;
+            right: 5%;
+            top: 5%;
+        }
+    }
+}
+
+
+@keyframes menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.header-banner{
+    height: 60vw;
+    background-image: url("../../../assets/gcl-header/banner-home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }

@@ -47,17 +47,16 @@ h6 {
 }
 
 p {
-  font-size: calc(10px + 1vmin);
+  font-size: 1.1vw;
   color: #222222;
 }
 
 a {
+  font-size: calc(8px + 1vmin);
   text-decoration: none;
 }
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -69,7 +68,110 @@ body {
   line-height: 1.5;
 }
 
-a {
+.header-section nav {
+  padding: 1% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 601px) {
+  .header-section nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.header-section nav .logo {
+  width: 100%;
+}
+
+.header-section nav .logo img {
+  height: 100%;
+}
+
+.header-section nav .main-menu {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-animation: menu 0.3s linear;
+          animation: menu 0.3s linear;
+}
+
+@media screen and (max-width: 601px) {
+  .header-section nav .main-menu {
+    display: none;
+  }
+}
+
+.header-section nav .main-menu a {
+  color: #222222;
+  font-weight: 600;
+  margin: 0 1%;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-section nav .main-menu a:hover {
+  color: #F9CA48;
+}
+
+@media screen and (max-width: 601px) {
+  .header-section nav .main-menu a {
+    margin: 5% 0;
+    display: block;
+  }
+}
+
+.header-section nav .menu-btn {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+@-webkit-keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header-banner {
+  height: 60vw;
+  background-image: url("../../../assets/gcl-header/banner-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=home.css.map */
