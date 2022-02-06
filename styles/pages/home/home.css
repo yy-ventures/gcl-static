@@ -85,10 +85,10 @@ a {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .header-section nav {
-  padding: 1% 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -98,15 +98,128 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  position: relative;
   background-color: #fff;
+  padding: 1% 5%;
 }
 
-@media screen and (max-width: 601px) {
+.header-section nav .logo img {
+  height: 100%;
+}
+
+.header-section nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.header-section nav .nav-links li {
+  list-style-type: none;
+}
+
+.header-section nav .nav-links li a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-section nav .nav-links li a:hover {
+  color: #F9CA48;
+}
+
+.header-section nav .nav-links .page-active {
+  color: #F9CA48;
+}
+
+.header-section nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.header-section nav .burger .burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #222222;
+  margin: 5px;
+}
+
+.header-section nav .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.header-section nav .toggle .line2 {
+  opacity: 0;
+}
+
+.header-section nav .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.header-banner {
+  height: 60vw;
+  background-image: url("../../../assets/images/gcl-header/banner-home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
   .header-section nav {
+    height: 80px;
+  }
+  .header-section nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    top: 80px;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -114,83 +227,30 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
-}
-
-.header-section nav .logo {
-  width: 100%;
-}
-
-.header-section nav .logo img {
-  height: 100%;
-}
-
-.header-section nav .main-menu {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-animation: menu 0.3s linear;
-          animation: menu 0.3s linear;
-}
-
-@media screen and (max-width: 601px) {
-  .header-section nav .main-menu {
-    display: none;
+  .header-section nav .nav-links li {
+    opacity: 0;
+    padding: 5% 0;
   }
-}
-
-.header-section nav .main-menu a {
-  color: #222222;
-  font-weight: 600;
-  margin: 0 1%;
-  text-decoration: none;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.header-section nav .main-menu a:hover {
-  color: #F9CA48;
-}
-
-@media screen and (max-width: 601px) {
-  .header-section nav .main-menu a {
-    margin: 5% 0;
+  .header-section nav .nav-links li a {
+    color: #ffffff;
+  }
+  .header-section nav .logo img {
+    height: 50%;
+  }
+  .header-section nav .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .header-section nav .burger {
     display: block;
   }
-}
-
-.header-section nav .menu-btn {
-  position: absolute;
-  right: 5%;
-  top: 5%;
-}
-
-@-webkit-keyframes menu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes menu {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.header-banner {
-  height: 60vw;
-  background-image: url("../../../assets/gcl-header/banner-home.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 /*# sourceMappingURL=home.css.map */
