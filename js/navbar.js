@@ -27,11 +27,11 @@ navSlide();
 
 // navbar hover function
 
-const activeHover = () => {
-
+const navActive = () => {
     const navParent = document.querySelector("#navMenu");
-    let currentLink = document.querySelector(`#navMenu a[href="${location.pathname}"]`);
-    
+    let currentLink = document.querySelector(`#navMenu li a[href="${location.pathname}"]`);
+
+
     // adding a active class name
     currentLink.classList.add("page-active");
 
@@ -39,7 +39,7 @@ const activeHover = () => {
     const hoverPageInactive = () => {
         currentLink.classList.remove("page-active");
     }
-    
+
     // adding leave hover
     const hoverPageActive = () => {
         currentLink.classList.add("page-active");
@@ -47,9 +47,10 @@ const activeHover = () => {
 
     // cycle through the children elements of navbar
     for (let elem of navParent.children) {
+
         elem.onmouseenter = hoverPageInactive;
         elem.onmouseleave = hoverPageActive;
     }
 }
 
-activeHover()
+navActive()
