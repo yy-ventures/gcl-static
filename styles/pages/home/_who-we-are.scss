@@ -24,9 +24,53 @@
             p{
                 font-size: calc(10px + 0.6vw);
                 color: $secondary;
+                margin: 2.5% 0 5% 0; 
                 @media screen and (max-width: 600px) {
                     font-size: 14px;
                 }
+            }
+            a{
+                border: 2px solid $secondary;
+                text-decoration: none;
+                padding: 1.5% 2%;
+                font-size: calc(10px + 0.6vw);
+                color: $secondary;
+                background-color: $white;
+                text-transform: uppercase;
+                border-radius: 10px;
+                font-weight: 500;
+                transition: 0.3s;
+                @media screen and (max-width: 600px) {
+                    font-size: 14px;
+                }
+                &:hover{
+                    background-color: $secondary;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .what-we-do-container{
+        
+        .what-we-do-header{
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            padding: 5% 0;
+            position: relative;
+            h2{
+                font-size: calc(10px + 2vw);
+                font-weight: 600;
+                color: $secondary;
+                @media screen and (max-width: 600px) {
+                    font-size: 16px;
+                } 
+            }
+            img{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }

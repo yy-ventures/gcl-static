@@ -50,11 +50,6 @@ p {
   color: #222222;
 }
 
-a {
-  font-size: calc(clamp(0.9rem, 1vw + 1rem, 2.2rem));
-  text-decoration: none;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
