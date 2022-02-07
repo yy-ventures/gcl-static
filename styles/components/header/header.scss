@@ -1,0 +1,62 @@
+@import '../../base/base-style.scss';
+
+
+.header-section {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        padding: 1% 5%;
+        .logo {
+            img {
+                height: 100%;
+            }
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            li {
+                list-style-type: none;
+                a {
+                    color: $text-dark;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    padding: 10px 0;
+                    transition: 0.3s;
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .page-active{
+                color: $primary;
+            }
+        }
+        .burger {
+            display: none;
+            cursor: pointer;
+            .burger-line{
+                width: 25px;
+                height: 3px;
+                background-color: $text-dark;
+                margin: 5px;
+            }
+        }   
+        .toggle{
+            .line1{
+                transform: rotate(-45deg) translate(-5px, 6px);
+                transition: transform 0.2s ease-in;
+            }
+            .line2{
+                opacity: 0;
+            }
+            .line3{
+                transform: rotate(45deg) translate(-5px, -6px);
+                transition: transform 0.2s ease-in;
+            }
+        }
+    }
+}

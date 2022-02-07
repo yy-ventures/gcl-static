@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -92,13 +93,55 @@ body {
           box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #F9CA48;
+  background-color: #fff;
+  border: 2px solid #F9CA48;
+}
+
+.btn-primary:hover {
+  background-color: #F9CA48;
+  color: #F9F9F9;
+}
+
+.btn-secondary {
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+.btn-secondary:hover {
+  color: #F9CA48;
+  border: 2px solid #F9CA48;
+}
+
+.btn-white {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-white:hover {
+  color: #0000;
+  background-color: #fff;
 }
 
 .about__header {
   background-image: url(/assets/images/gcl-header/banner-about.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 70vw;
+  height: 60vw;
+  margin-top: -2rem;
   padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,21 +194,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-}
-
-.about__us .btn {
-  color: #F9CA48;
-  background-color: white;
-  font-size: 2rem;
-  padding: 1rem 2rem;
-  border: 2px solid #F9CA48;
-  border-radius: .5rem;
-  cursor: pointer;
-}
-
-.about__us .btn:hover {
-  background-color: #F9CA48;
-  color: #F9F9F9;
 }
 
 .about__us--info {
@@ -292,6 +320,8 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .about__team--container .member .img-container {

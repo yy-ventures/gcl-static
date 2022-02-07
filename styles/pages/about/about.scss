@@ -1,5 +1,6 @@
 @import '../../base/base-style.scss';
 @import '../../sass/variables';
+@import '../../components/button';
 
 .about{
     
@@ -8,7 +9,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         
-        height: 70vw;
+        height: 60vw;
+        margin-top: -2rem;
         padding: 0 20%;
     
         display: flex;
@@ -46,20 +48,6 @@
                 display: flex;
                 gap: 1rem;
             }
-        }
-
-        .btn{
-            color: $primary;
-            background-color: white;
-            font-size: 2rem;
-            padding: 1rem 2rem;
-            border: 2px solid $primary;
-            border-radius: .5rem;
-            cursor: pointer;
-        }
-        .btn:hover{
-            background-color: $primary;
-            color: $text-light;
         }
 
         &--info{
@@ -156,6 +144,7 @@
 
             .member{
                 width: max-content;
+                justify-self: center;
 
                 .img-container{
                     margin-bottom: 1rem;
@@ -166,5 +155,12 @@
                 }
             }
         }
-    }
+
+        &--box{
+            background-color: red;
+
+            display: flex;
+            justify-content: center;
+        }
+    }   
 }
