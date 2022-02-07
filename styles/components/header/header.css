@@ -50,11 +50,6 @@ p {
   color: #222222;
 }
 
-a {
-  font-size: calc(clamp(0.9rem, 1vw + 1rem, 2.2rem));
-  text-decoration: none;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -104,13 +99,7 @@ body {
   overflow-x: hidden;
 }
 
-.header-section {
-  position: relative;
-}
-
 .header-section nav {
-  padding: 1rem 3rem;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,10 +109,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header-section nav .logo {
-  height: 6rem;
+  background-color: #fff;
+  padding: 1% 5%;
 }
 
 .header-section nav .logo img {
@@ -134,7 +121,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
 }
 
 .header-section nav .nav-links li {
@@ -145,10 +134,16 @@ body {
   color: #222222;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: calc(10px + 0.5vw);
   padding: 10px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .header-section nav .nav-links li a {
+    font-size: 16px;
+  }
 }
 
 .header-section nav .nav-links li a:hover {

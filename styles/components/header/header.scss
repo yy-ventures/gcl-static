@@ -2,34 +2,33 @@
 
 
 .header-section {
-    position: relative;
     nav {
-        padding: 1rem 3rem;
-        background-color: white;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        background-color: $white;
+        padding: 1% 5%;
         .logo {
-            height: 6rem;
             img {
                 height: 100%;
             }
         }
         .nav-links {
             display: flex;
-            gap: 4rem;
-
+            justify-content: space-around;
+            width: 50%;
             li {
                 list-style-type: none;
                 a {
                     color: $text-dark;
                     text-decoration: none;
                     font-weight: 600;
-                    font-size: 1.6rem;
+                    font-size: calc(10px + 0.5vw);
                     padding: 10px 0;
                     transition: 0.3s;
+                    @media screen and (max-width:600px) {
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: $primary;
                     }
@@ -64,3 +63,4 @@
         }
     }
 }
+

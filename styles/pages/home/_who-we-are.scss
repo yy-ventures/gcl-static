@@ -1,13 +1,14 @@
 @import "../../global.scss";
 
 .who-we-are{
-    padding: 5%;
+    padding: 5% 0;
     @media screen and (max-width: 600px) {
         margin-top: 5%;
     }
     .who-we-are-header{
         margin: 0 auto;
         width: 50%;
+        padding: 5%;
         @media screen and (max-width: 600px) {
             width: 100%;
         }
@@ -50,8 +51,7 @@
             }
         }
     }
-    .what-we-do-container{
-        
+    .what-we-do-container{    
         .what-we-do-header{
             margin: 0 auto;
             width: 50%;
@@ -71,6 +71,28 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
+                @media screen and (max-width: 600px) {
+                    display: none;
+                } 
+            }
+        }
+        .what-we-do-body{
+            padding: 5% 0;
+            background-color: antiquewhite;
+            .inspire-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-flow: dense;
+                @media screen and (max-width: 600px) {
+                    grid-template-columns: 1fr;
+                } 
+                .inspire-left{
+                    background-color: red;
+                    padding: 5%;
+                }
+                .inspire-right{
+                    background-color: black;
+                }
             }
         }
     }
