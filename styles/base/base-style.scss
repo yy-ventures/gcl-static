@@ -4,12 +4,10 @@
 @import "../sass/typography";
 @import "../sass/variables";
 
-*,
-*::before,
-*::after{
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html{
@@ -17,10 +15,8 @@ html{
 }
 
 body{
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
 }
-
 
