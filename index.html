@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,10 @@
     <link rel="stylesheet" href="./styles/pages/home/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/slick.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header class="header-section">
         <nav>
@@ -31,9 +35,88 @@
             </div>
         </nav>
     </header>
+
+    <!-- home page banner -->
     <section class="header-banner">
-        
+        <div class="header-banner-content">
+            <h2>The Grameen Creative Lab is an innovative incubator and creative consultancy serving society's most
+                pressing needs through social business</h2>
+            <p class="author-title"></p>
+        </div>
     </section>
+
+    <!-- person slider -->
+    <section class="person-slider person-slider-container">
+        <div class="person-data">
+            <div class="person-data-grid">
+                <div class="person-image">
+                    <img src="./assets/person/person-yunus.png" alt="">
+                </div>
+                <div class="person-quote">
+                    <div>
+                        <p class="quote">“Unprecedented technological capabilities combined with unlimited human
+                            creativity have
+                            given us tremendous power to take on intractable problems like poverty, unemployment,
+                            disease, and
+                            environmental degradation. Our challenge is to translate this extraordinary potential into
+                            meaningful
+                            change.”
+                        </p>
+                        <div class="designation">
+                            <p>Professor Muhammad Yunus</p>
+                            <p></p>
+                            <p>Chairman, Co-founder The Grameen Creative Lab,</p>
+                            <p>Nobel Peace Laureate 2006</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="person-data">
+            <div class="person-data-grid">
+                <div class="person-image">
+                    <img src="./assets/person/person-hans.png" alt="">
+                </div>
+                <div class="person-quote">
+                    <div>
+                        <p class="quote">“Unprecedented technological capabilities combined with unlimited human
+                            creativity have
+                            given us tremendous power to take on intractable problems like poverty, unemployment,
+                            disease, and
+                            environmental degradation. Our challenge is to translate this extraordinary potential into
+                            meaningful
+                            change.”
+                        </p>
+                        <div class="designation">
+                            <p>Hans Reitz</p>
+                            <p>Creative Advisor to Prof. Muhammad Yunus,</p>
+                            <p>Head of Global Social Business Summit,</p>
+                            <p>CEO The Grameen Creative Lab </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- who we are -->
+
+    <section class="who-we-are">
+        <div class="who-we-are-header">
+            <div class="header-content">
+                <h2>Who we are</h2>
+                <p>We are a diverse, global, committed and passionate team with the mission, inspired by our Co-Founder
+                    and Chairman Nobel Peace Laureate Muhammad Yunus, of creating an ecosystem where social business
+                    strives to solve the most pressing social and environmental problems of our times.</p>
+                <a href="/">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- scripts -->
     <script src="./js/navbar.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/customSlick.js"></script>
 </body>
+
 </html>

@@ -74,13 +74,23 @@ a {
   text-align: center;
 }
 
-*,
-*::before,
-*::after {
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -88,9 +98,8 @@ html {
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=base-style.css.map */

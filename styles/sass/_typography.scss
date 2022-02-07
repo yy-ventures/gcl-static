@@ -52,3 +52,14 @@ a{
 .text-center{
     text-align: center;
 }
+
+
+.author-title{
+    color: $white;
+    font-size: calc(8px + 1.5vw);
+    font-weight: 500;
+    @media screen and (max-width:600px) {
+        font-size: 14px;
+    }
+}
+

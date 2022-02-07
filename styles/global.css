@@ -75,6 +75,18 @@ a {
   text-align: center;
 }
 
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

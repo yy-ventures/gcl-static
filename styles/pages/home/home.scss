@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import "./who-we-are";
 
 .header-section {
     nav {
@@ -22,9 +23,12 @@
                     color: $text-dark;
                     text-decoration: none;
                     font-weight: 600;
-                    font-size: 1rem;
+                    font-size: calc(10px + 0.5vw);
                     padding: 10px 0;
                     transition: 0.3s;
+                    @media screen and (max-width:600px) {
+                        font-size: 16px;
+                    }
                     &:hover{
                         color: $primary;
                     }
@@ -60,13 +64,126 @@
     }
 }
 
+// header banner
 .header-banner {
     height: 60vw;
     background-image: url("../../../assets/images/gcl-header/banner-home.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .header-banner-content{
+        width: 60%;
+        text-align: center;
+        @media screen and (max-width:600px) {
+            width: 80%;
+        }
+        h2{
+            color: $white;
+            font-size: calc(8px + 2vw);
+            font-weight: 500;
+            @media screen and (max-width:600px) {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
+
+// person slider
+
+.person-slider{
+    height: 550px;
+    padding: 0 5%;
+    margin-top: 2.5%;
+}
+
+.person-slider-container{
+    position: relative;
+    background-image: url("../../../assets/yellow-path.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    .person-prev-arrow{
+        cursor: pointer;
+        text-align: center;
+        position: absolute;
+        left: 2.5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .person-next-arrow{
+        cursor: pointer;
+        text-align: center;
+        position: absolute;
+        right: 2.5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .person-data{
+        height: 550px;
+        @media screen and (max-width: 600px) {
+            height: auto;
+            padding: 0.5%;
+        }
+        .person-data-grid{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            @media screen and (max-width: 600px) {
+                grid-template-columns: 1fr;
+            }
+            .person-image{
+                position: relative;
+                @media screen and (max-width: 600px) {
+                    min-height: 250px;
+                }
+                img{
+                    width: 95%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .person-quote{
+                padding: 5%;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @media screen and (max-width: 600px) {
+                    padding: 5% 2.5%;
+                }
+                .quote{
+                    font-size: calc(8px + 1vw);
+                    color: $text-dark;
+                }
+                .designation{
+                    margin-top: 2.5%;
+                    p{
+                        font-size: calc(8px + 0.8vw);
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 1441px) {
+        height: 700px;
+        .person-data{
+            height: 700px;
+        }
+    }
+    @media screen and (max-width: 1280px) {
+        height: 500px;
+        .person-data{
+            height: 500px;
+        }
+    }
+}
 
 // animation
 
@@ -85,10 +202,8 @@
 // media queries
 
 @media screen and (max-width: 600px) {
-    body{
-        overflow-x: hidden;
-    }
     .header-section{
+        z-index: 1000;
         nav{
             height: 80px;
             .nav-links{
@@ -96,18 +211,19 @@
                 right: 0;
                 height: 90vh;
                 top: 80px;
-                background-color: #000;
+                background-color: $text-dark;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
-                transform: translateX(100%);
+                transform: translateY(calc(-100% - 80px));
                 transition: transform 0.3s ease-in;
+                z-index: 2;
                 li{
                     opacity: 0;
                     padding: 5% 0;
                     a{
-                        color: #ffffff;
+                        color: $text-light;
                     }
                 }
             }   
@@ -117,7 +233,7 @@
                 }
             } 
             .nav-active{
-                transform: translateX(0%);
+                transform: translateY(0%);
             }                     
             .burger {
                 display: block;

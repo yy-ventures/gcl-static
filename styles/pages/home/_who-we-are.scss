@@ -1,0 +1,33 @@
+@import "../../global.scss";
+
+.who-we-are{
+    padding: 5%;
+    @media screen and (max-width: 600px) {
+        margin-top: 5%;
+    }
+    .who-we-are-header{
+        margin: 0 auto;
+        width: 50%;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        .header-content{
+            text-align: center;
+            h2{
+                font-size: calc(10px + 2vw);
+                font-weight: 600;
+                color: $secondary;
+                @media screen and (max-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+            p{
+                font-size: calc(10px + 0.6vw);
+                color: $secondary;
+                @media screen and (max-width: 600px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
