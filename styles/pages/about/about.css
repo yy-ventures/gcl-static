@@ -126,6 +126,7 @@ body {
   color: black;
   background-color: transparent;
   border: 2px solid black;
+  text-transform: uppercase;
 }
 
 .btn-secondary:hover {
@@ -140,7 +141,7 @@ body {
 }
 
 .btn-white:hover {
-  color: #0000;
+  color: black;
   background-color: #fff;
 }
 
@@ -338,5 +339,45 @@ body {
 
 .about__team--container .member__designation {
   font-size: 1.5rem;
+}
+
+.about__team--box {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__family {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__family--logo-container {
+  width: 80%;
+  padding: 8rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3em;
 }
 /*# sourceMappingURL=about.css.map */

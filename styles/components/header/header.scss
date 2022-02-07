@@ -2,28 +2,32 @@
 
 
 .header-section {
+    position: relative;
     nav {
+        padding: 1rem 3rem;
+        background-color: white;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $white;
-        padding: 1% 5%;
+
         .logo {
+            height: 6rem;
             img {
                 height: 100%;
             }
         }
         .nav-links {
             display: flex;
-            justify-content: space-around;
-            width: 50%;
+            gap: 4rem;
+
             li {
                 list-style-type: none;
                 a {
                     color: $text-dark;
                     text-decoration: none;
                     font-weight: 600;
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                     padding: 10px 0;
                     transition: 0.3s;
                     &:hover{

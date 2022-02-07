@@ -157,10 +157,27 @@
         }
 
         &--box{
-            background-color: red;
-
+            margin-top: 4rem;
             display: flex;
             justify-content: center;
         }
-    }   
+    }
+
+    &__family{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--logo-container{
+            width: 80%;
+            padding: 8rem 0;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+        }
+    }
 }
