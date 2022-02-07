@@ -51,11 +51,6 @@ p {
   color: #222222;
 }
 
-a {
-  font-size: calc(clamp(0.9rem, 1vw + 1rem, 2.2rem));
-  text-decoration: none;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -152,11 +147,6 @@ p {
   color: #222222;
 }
 
-a {
-  font-size: calc(clamp(0.9rem, 1vw + 1rem, 2.2rem));
-  text-decoration: none;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -242,12 +232,66 @@ body {
 .who-we-are .who-we-are-header .header-content p {
   font-size: calc(10px + 0.6vw);
   color: #72725D;
+  margin: 2.5% 0 5% 0;
 }
 
 @media screen and (max-width: 600px) {
   .who-we-are .who-we-are-header .header-content p {
     font-size: 14px;
   }
+}
+
+.who-we-are .who-we-are-header .header-content a {
+  border: 2px solid #72725D;
+  text-decoration: none;
+  padding: 1.5% 2%;
+  font-size: calc(10px + 0.6vw);
+  color: #72725D;
+  background-color: #fff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 500;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .who-we-are .who-we-are-header .header-content a {
+    font-size: 14px;
+  }
+}
+
+.who-we-are .who-we-are-header .header-content a:hover {
+  background-color: #72725D;
+  color: #fff;
+}
+
+.who-we-are .what-we-do-container .what-we-do-header {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding: 5% 0;
+  position: relative;
+}
+
+.who-we-are .what-we-do-container .what-we-do-header h2 {
+  font-size: calc(10px + 2vw);
+  font-weight: 600;
+  color: #72725D;
+}
+
+@media screen and (max-width: 600px) {
+  .who-we-are .what-we-do-container .what-we-do-header h2 {
+    font-size: 16px;
+  }
+}
+
+.who-we-are .what-we-do-container .what-we-do-header img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .header-section nav {
