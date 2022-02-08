@@ -17,6 +17,24 @@ $breakpoint arguments choice:
 - tab-land
 - big-desktop
 */
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -79,6 +97,12 @@ p {
   padding: 10rem;
 }
 
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 5rem;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -118,6 +142,24 @@ body {
   overflow-x: hidden;
 }
 
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -195,6 +237,12 @@ p {
 
 .container-1 {
   padding: 10rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 5rem;
+  }
 }
 
 .text-center {
@@ -301,11 +349,29 @@ body {
   background-color: #fff;
 }
 
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .about__header {
   background-image: url(/assets/images/gcl-header/banner-about.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60vw;
+  height: 70vw;
   margin-top: -2rem;
   padding: 0 20%;
   display: -webkit-box;
@@ -319,12 +385,19 @@ body {
           justify-content: center;
 }
 
+@media (max-width: 40em) {
+  .about__header {
+    padding: 0 5%;
+  }
+}
+
 .about__header--content {
   color: #F9F9F9;
   text-align: center;
 }
 
 .about__header--content .heading {
+  font-size: 3.2rem;
   font-weight: 400;
 }
 
@@ -371,9 +444,26 @@ body {
       grid-template-rows: repeat(3, [row-start] min-content [row-end]);
 }
 
+@media (max-width: 40em) {
+  .about__us--info {
+    -ms-grid-columns: [col-start] 1fr [col-end];
+        grid-template-columns: [col-start] 1fr [col-end];
+    -ms-grid-rows: ([row-start] min-content [row-end])[6];
+        grid-template-rows: repeat(6, [row-start] -webkit-min-content [row-end]);
+        grid-template-rows: repeat(6, [row-start] min-content [row-end]);
+  }
+}
+
 .about__us--info .info-1 {
   grid-column: col-start 1 / col-end 1;
   grid-row: row-start 1 / row-end 1;
+}
+
+@media (max-width: 40em) {
+  .about__us--info .info-1 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 1 / row-end 1;
+  }
 }
 
 .about__us--info .image-1 {
@@ -381,9 +471,23 @@ body {
   grid-row: row-start 1 / row-end 1;
 }
 
+@media (max-width: 40em) {
+  .about__us--info .image-1 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 2 / row-end 2;
+  }
+}
+
 .about__us--info .info-2 {
   grid-column: col-start 2 / col-end 2;
   grid-row: row-start 2 / row-end 2;
+}
+
+@media (max-width: 40em) {
+  .about__us--info .info-2 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 3 / row-end 3;
+  }
 }
 
 .about__us--info .image-2 {
@@ -391,14 +495,35 @@ body {
   grid-row: row-start 2 / row-end 2;
 }
 
+@media (max-width: 40em) {
+  .about__us--info .image-2 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 4 / row-end 4;
+  }
+}
+
 .about__us--info .info-3 {
   grid-column: col-start 1 / col-end 1;
   grid-row: row-start 3 / row-end 3;
 }
 
+@media (max-width: 40em) {
+  .about__us--info .info-3 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 5 / row-end 5;
+  }
+}
+
 .about__us--info .image-3 {
   grid-column: col-start 2 / col-end 2;
   grid-row: row-start 3 / row-end 3;
+}
+
+@media (max-width: 40em) {
+  .about__us--info .image-3 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 6 / row-end 6;
+  }
 }
 
 .about__us--info .img {
@@ -422,6 +547,12 @@ body {
 .about__us--info .text-container {
   padding: 8rem;
   background-color: #F9F9F9;
+}
+
+@media (max-width: 40em) {
+  .about__us--info .text-container {
+    padding: 4rem;
+  }
 }
 
 .about__contribution {
@@ -535,5 +666,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 3em;
+}
+
+.about__family--logo-container .logo {
+  height: 6rem;
 }
 /*# sourceMappingURL=about.css.map */

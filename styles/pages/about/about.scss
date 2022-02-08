@@ -1,6 +1,7 @@
 @import '../../base/base-style.scss';
 @import '../../sass/variables';
 @import '../../components/button';
+@import '../../sass/mixins';
 
 .about{
     
@@ -9,9 +10,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         
-        height: 60vw;
+        height: 70vw;
         margin-top: -2rem;
         padding: 0 20%;
+
+        @include response(phone){
+            padding: 0 5%;
+        }
     
         display: flex;
         align-items: center;
@@ -22,6 +27,7 @@
             text-align: center;
     
             .heading{
+                font-size: 3.2rem;
                 font-weight: 400;
             }
         }
@@ -55,29 +61,64 @@
             grid-template-columns: repeat(2, [col-start] 50% [col-end]);
             grid-template-rows: repeat(3, [row-start] min-content [row-end]);
 
+            @include response(phone){
+                grid-template-columns: [col-start] 1fr [col-end];
+                grid-template-rows: repeat(6, [row-start] min-content [row-end]);
+            }
+
             .info-1{
                 grid-column: col-start 1 / col-end 1;
-                grid-row: row-start 1 / row-end 1;            
+                grid-row: row-start 1 / row-end 1;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 1 / row-end 1;
+                }
             }
             .image-1{
                 grid-column: col-start 2 / col-end 2;
-                grid-row: row-start 1 / row-end 1;                
+                grid-row: row-start 1 / row-end 1; 
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 2 / row-end 2;
+                }
             }
             .info-2{
                 grid-column: col-start 2 / col-end 2;
-                grid-row: row-start 2 / row-end 2;                
+                grid-row: row-start 2 / row-end 2;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 3 / row-end 3;
+                }
             }
             .image-2{
                 grid-column: col-start 1 / col-end 1;
-                grid-row: row-start 2 / row-end 2;                
+                grid-row: row-start 2 / row-end 2;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 4 / row-end 4;
+                }
             }
             .info-3{
                 grid-column: col-start 1 / col-end 1;
-                grid-row: row-start 3 / row-end 3;                
+                grid-row: row-start 3 / row-end 3;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 5 / row-end 5;
+                }
             }
             .image-3{
                 grid-column: col-start 2 / col-end 2;
                 grid-row: row-start 3 / row-end 3;
+
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 6 / row-end 6;
+                }
             }
 
 
@@ -97,7 +138,11 @@
             }
             .text-container{
                 padding: 8rem;
-                background-color: $background-grey
+                background-color: $background-grey;
+
+                @include response(phone){
+                    padding: 4rem;
+                }
             }
         }
     }
@@ -178,6 +223,10 @@
             justify-content: center;
             align-items: center;
             gap: 3em;
+
+            .logo{
+                height: 6rem;
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 @import "variables";
+@import './mixins';
 
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -53,6 +54,10 @@ p{
 //custom class
 .container-1{
     padding: 10rem;
+
+    @include response(phone){
+        padding: 5rem;
+    }
 }
 .text-center{
     text-align: center;
