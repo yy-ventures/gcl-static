@@ -159,13 +159,7 @@ $breakpoint arguments choice:
 - tab-land
 - big-desktop
 */
-.header-section {
-  position: relative;
-}
-
 .header-section nav {
-  padding: 1rem 3rem;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,10 +169,8 @@ $breakpoint arguments choice:
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.header-section nav .logo {
-  height: 6rem;
+  background-color: #fff;
+  padding: 1% 5%;
 }
 
 .header-section nav .logo img {
@@ -206,10 +198,16 @@ $breakpoint arguments choice:
   color: #222222;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: calc(10px + 0.5vw);
   padding: 10px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  .header-section nav .nav-links li a {
+    font-size: 16px;
+  }
 }
 
 .header-section nav .nav-links li a:hover {
