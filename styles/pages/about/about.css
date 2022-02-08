@@ -17,6 +17,7 @@ $breakpoint arguments choice:
 - tab-land
 - big-desktop
 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 700;
@@ -62,6 +63,18 @@ p {
   margin-bottom: 3rem;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
 .container-1 {
   padding: 10rem;
 }
@@ -93,6 +106,130 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 10rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -110,6 +247,8 @@ body {
   color: #F9CA48;
   background-color: #fff;
   border: 2px solid #F9CA48;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .btn-primary:hover {
@@ -122,9 +261,29 @@ body {
   background-color: transparent;
   border: 2px solid black;
   text-transform: uppercase;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .btn-secondary:hover {
+  color: #F9CA48;
+  border: 2px solid #F9CA48;
+}
+
+.btn-secondary-sm {
+  color: black;
+  background-color: transparent;
+  font-size: 1.3rem !important;
+  font-weight: 600;
+  padding: .8rem 2rem !important;
+  border-radius: .7rem !important;
+  border: 2px solid black;
+  text-transform: uppercase;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-secondary-sm:hover {
   color: #F9CA48;
   border: 2px solid #F9CA48;
 }
@@ -133,6 +292,8 @@ body {
   color: #fff;
   background-color: transparent;
   border: 2px solid #fff;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .btn-white:hover {

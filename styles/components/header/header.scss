@@ -1,4 +1,5 @@
 @import '../../base/base-style.scss';
+@import '../../sass/mixins';
 
 
 .header-section {
@@ -20,6 +21,10 @@
         .nav-links {
             display: flex;
             gap: 4rem;
+
+            @include response(phone){
+                display: none;
+            }
 
             li {
                 list-style-type: none;

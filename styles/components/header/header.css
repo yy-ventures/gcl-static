@@ -50,11 +50,6 @@ p {
   color: #222222;
 }
 
-a {
-  font-size: calc(clamp(0.9rem, 1vw + 1rem, 2.2rem));
-  text-decoration: none;
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -65,6 +60,18 @@ a {
 
 .mb-3 {
   margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 .container-1 {
@@ -98,12 +105,36 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
 }
 
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 .header-section {
   position: relative;
 }
@@ -135,6 +166,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 4rem;
+}
+
+@media (max-width: 40em) {
+  .header-section nav .nav-links {
+    display: none;
+  }
 }
 
 .header-section nav .nav-links li {

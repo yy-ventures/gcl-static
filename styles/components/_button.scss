@@ -1,4 +1,5 @@
 @import '../sass/variables';
+@import '../base/base-style.scss';
 
 .btn{
     font-size: 2rem;
@@ -11,6 +12,7 @@
     color: $primary;
     background-color: $white;
     border: 2px solid $primary;
+    transition: all .2s;
     
     &:hover{
         background-color: $primary;
@@ -23,6 +25,24 @@
     background-color: transparent;
     border: 2px solid black;
     text-transform: uppercase;
+    transition: all .2s;
+
+    &:hover{
+        color: $primary;
+        border: 2px solid $primary;
+    }
+}
+
+.btn-secondary-sm{
+    color: black;
+    background-color: transparent;
+    font-size: 1.3rem !important;
+    font-weight: 600;
+    padding: .8rem 2rem !important;
+    border-radius: .7rem !important;
+    border: 2px solid black;
+    text-transform: uppercase;
+    transition: all .2s;
 
     &:hover{
         color: $primary;
@@ -34,6 +54,7 @@
     color: $white;
     background-color: transparent;
     border: 2px solid $white;
+    transition: all .2s;
 
     &:hover{
         color: black;
