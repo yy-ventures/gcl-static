@@ -7,6 +7,7 @@
         "../../sass/_mixins.scss",
         "../../sass/_typography.scss",
         "../../sass/_variables.scss",
+        "../../sass/_mixins.scss",
         "../../sass/_variables.scss",
         "_who-we-are.scss",
         "../../global.scss",
