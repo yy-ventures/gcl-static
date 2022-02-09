@@ -2285,6 +2285,11 @@ body {
   }
 }
 
+.header-banner .header-banner-content p {
+  font-size: calc(8px + 1vw);
+  margin-top: 2.5%;
+}
+
 .person-slider {
   height: 550px;
   padding: 0 5%;

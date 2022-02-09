@@ -111,3 +111,137 @@ $(document).ready(function () {
         ]
   });
 });
+
+
+// service inspire slider
+
+$(document).ready(function () {
+  $('.inspire-slider-body').slick({
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+  });
+});
+
+// service inspire slider
+
+$(document).ready(function () {
+  $('.resources-slider-body').slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+      responsive: [
+        {
+          breakpoint: 1300,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+          }
+        },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+  });
+});
+
+
+// service inspire slider
+
+// $(document).ready(function () {
+//   $('.blog-slider').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
+//     nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+//     responsive: [
+//       {
+//         breakpoint: 1300,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 1,
+//           infinite: true,
+//         }
+//       },
+//       {
+//         breakpoint: 1024,
+//         settings: {
+//           slidesToShow: 3,
+//           slidesToScroll: 1,
+//           infinite: true,
+//         }
+//       },
+//       {
+//         breakpoint: 600,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       },
+//       {
+//         breakpoint: 480,
+//         settings: {
+//           slidesToShow: 1,
+//           slidesToScroll: 1
+//         }
+//       }
+//     ]
+//   });
+// });

@@ -1,0 +1,77 @@
+@import "../../global.scss";
+@import "./resources-slider";
+@import "./blog-slider";
+
+// community banner
+.community-banner {
+    height: 60vw;
+    background-image: url("../../../assets/images/gcl-header/banner-community.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .community-banner-content{
+        width: 60%;
+        text-align: center;
+        @media screen and (max-width:600px) {
+            width: 80%;
+        }
+        h2{
+            color: $white;
+            font-size: calc(8px + 2vw);
+            font-weight: 500;
+            @media screen and (max-width:600px) {
+                font-size: 16px;
+            }
+        }
+        p{
+            font-size: calc(8px + 1vw);
+            margin-top: 2.5%;
+        }
+    }
+}
+
+// community headline
+
+.community-headline{
+    padding: 5% 5% 2.5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    h2{
+        color: $text-dark;
+        font-weight: 600;
+        font-size: calc(10px + 2.5vw);
+    }
+    p{
+        font-size: calc(8px + 1vw);
+        width: 65%;
+        margin: 2.5% auto 5% auto;
+        @media screen and (max-width: 600px) {
+            width: 90%;
+        }
+    }
+    a{
+        border: 2px solid $text-dark;
+        text-transform: uppercase;
+        padding: 0.4em 1.5em;
+        margin-top: 2.5%;
+        font-size: calc(8px + 1vw);
+        text-decoration: none;
+        color: $text-dark;
+        border-radius: 10px;
+        transition: 0.3s;
+        background-color: inherit;
+        &:hover{
+            border: 2px solid $primary; 
+            background-color: $primary;
+            color: $white;
+        }
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
+    }
+}
