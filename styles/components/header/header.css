@@ -181,13 +181,9 @@ $breakpoint arguments choice:
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 4rem;
-}
-
-@media (max-width: 40em) {
-  .header-section nav .nav-links {
-    display: none;
-  }
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
 }
 
 .header-section nav .nav-links li {

@@ -1,0 +1,203 @@
+@import '../../sass/mixins';
+@import '../../sass/typography';
+@import '../../sass/variables';
+
+@import '../../base/base-style.scss';
+@import '../../components/header/header.scss';
+@import '../../components/button';
+
+.header-section {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $white;
+        padding: 1% 5%;
+        .logo {
+            img {
+                height: 100%;
+            }
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+
+            @include response(phone){
+                display: none;
+            }
+
+            li {
+                list-style-type: none;
+                a {
+                    color: $text-dark;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: calc(10px + 0.5vw);
+                    padding: 10px 0;
+                    transition: 0.3s;
+                    @media screen and (max-width:600px) {
+                        font-size: 16px;
+                    }
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .page-active{
+                color: $primary;
+            }
+        }
+        .burger {
+            display: none;
+            cursor: pointer;
+            .burger-line{
+                width: 25px;
+                height: 3px;
+                background-color: $text-dark;
+                margin: 5px;
+            }
+        }   
+        .toggle{
+            .line1{
+                transform: rotate(-45deg) translate(-5px, 6px);
+                transition: transform 0.2s ease-in;
+            }
+            .line2{
+                opacity: 0;
+            }
+            .line3{
+                transform: rotate(45deg) translate(-5px, -6px);
+                transition: transform 0.2s ease-in;
+            }
+        }
+    }
+}
+
+// ----------- MAIN BODY --------------->
+
+.news-article{
+    margin-bottom: 10rem;
+    .container-news{
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+    padding: 0 5%;
+
+    &__media{
+        border-bottom: 1px solid $grey;
+        
+        .container{
+            padding: 2.4rem 0;
+
+            display: flex;
+            justify-content: space-between;
+
+            .link-container{
+
+                display: flex;
+                gap: 2rem;
+
+                &__label{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    align-self: center;
+                }
+                &__icon-container{
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .icon{
+                        background-color: $grey;
+                        text-decoration: none;
+                        color: $white;
+                        height: 3.6rem;
+                        width: 3.6rem;
+                        border-radius: 50%;
+
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__article{
+        .container-article{
+            padding: 5.9rem 0;
+            border-bottom: 1px solid $grey;
+        }
+
+        .text-box{
+            margin-bottom: 2rem;
+            margin-left: -1.5rem;
+
+            display: flex;
+            
+            &::before{
+                content: '';
+                display: block;
+                width: .86rem;
+                background-color: #3F3F3F;
+                margin-right: 1rem;
+            }
+        }
+
+        &--date{
+            font-size: 1.4rem;
+        }
+        &--heading{
+            font-weight: 600;
+            font-size: 3.6rem;
+            line-height: 4.9rem;
+        }
+        &--text{
+            font-size: 1.6rem;
+        }
+        &--text-lg{
+            font-size: 2rem;
+        }
+        &--text-italic{
+            font-size: 2rem;
+            font-style: italic;
+        }
+        &--img-container{
+            height: 44rem;
+            margin: 4rem 0;
+            background-color: aqua;
+
+            .image{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .btn-container{
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .action-btn{
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 1rem 2rem;
+
+
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
