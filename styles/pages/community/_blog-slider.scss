@@ -1,0 +1,119 @@
+@import "../../global.scss";
+
+.blog-slider{
+    padding: 5% 10%; 
+    .blog-slider-header{
+        position: relative;
+        text-align: center;
+        padding: 2.5% 0;
+        h4{
+            font-weight: 500;
+            font-size: calc(10px + 1.5vw);
+            @media screen and (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
+        .filter{
+            position: absolute;
+            right: 0;
+            top: 30%;
+            display: flex;
+            align-items: center;
+            padding: 0 1%;
+            width: 25%;
+            .sort-by{
+                color: $text-dark;
+                font-size: 16px;
+                width: 50%;
+            }
+            select{
+                margin-left: 2%;
+                width: 250px;
+                padding: 10px;
+                background-color: $white;
+                border: 2px solid #DEE1E4;
+                border-radius: 5px;
+                font-size: 16px;
+                color: #666;
+                option{
+                    color: #666;
+                    &:hover{
+                        background-color: rebeccapurple;
+                    }
+                }
+            }
+        }
+    }
+    .resources-slider-body{
+        margin: 5% 0;
+        position: relative;
+        .slider-data{
+            margin: 0 0.6%;
+            height: 550px;
+            background-color: $text-light;
+            position: relative;
+            @media screen and (min-width: 1441px) {
+                height: 650px;
+            }
+            @media screen and (max-width: 600px) {
+                height: 500px;
+                margin: 0.5% 0.5%;
+            }
+            .slider-data-header{
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .slider-data-body{
+                padding: 5%;
+                h5{
+                    font-size: calc(8px + 0.8vw);
+                    font-weight: 500;
+                    color: $text-dark;
+                    @media screen and (max-width: 600px) {
+                        font-size: 15px;
+                    }
+                }
+                p{
+                    padding: 2.5% 0;
+                }
+            }
+            .slider-data-footer{
+                position: absolute;
+                bottom: 5%;
+                left: 5%;
+                a{
+                    padding: 0.5em 1.5em;
+                    font-size: calc(8px + 0.5vw);
+                    text-transform: uppercase;
+                    border: 2px solid $text-dark;
+                    text-decoration: none;
+                    color: $text-dark;
+                    border-radius: 10px;
+                    transition: 0.3s;
+                    &:hover{
+                        border: 2px solid $primary; 
+                        color: $primary;
+                    }
+                } 
+            }
+        }
+        .person-prev-arrow{
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            left: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .person-next-arrow{
+            cursor: pointer;
+            text-align: center;
+            position: absolute;
+            right: -5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}

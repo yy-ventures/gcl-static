@@ -4,7 +4,7 @@
 @import "./home-highlight";
 @import "./people-say";
 @import "./home-partnerships";
-@import "../../components/footer";
+
 
 .header-section {
     nav {
@@ -91,6 +91,10 @@
             @media screen and (max-width:600px) {
                 font-size: 16px;
             }
+        }
+        p{
+            font-size: calc(8px + 1vw);
+            margin-top: 2.5%;
         }
     }
 }
