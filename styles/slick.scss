@@ -99,3 +99,42 @@
     display: none;
 }
 
+.slick-dots {
+    position: absolute;
+    bottom: -10%;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 2px;
+            height: 2px;
+            padding: 4px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: #222;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    }
+    .slick-active{
+        button{
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import "../../global.scss";
+@import "../../components/button";
+
+.our-impact-container{
+    padding: 10% 0 5% 0;
+    .impact-header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        text-align: center;
+        img{
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+        h2{
+            font-weight: 500;
+            color: $text-dark;
+            font-size: calc(20px + 2vw);
+        }
+    }
+    .impact-body{
+        padding: 0 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        @media screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+        .impact-data{
+            text-align: center;
+            padding: 10% 5%;
+            h2{
+                font-weight: 600;
+                font-size: calc(60px + 2vw);
+            }
+            #impact1{
+                color: $gridOne;
+            }
+            #impact2{
+                color: $primary;
+            }
+            #impact3{
+                color: $gridThree;
+            }
+            p{
+                font-size: calc(6px + 1.1vw);
+                color: $text-dark;
+                font-weight: 500;
+                @media screen and (max-width:600px) {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .impact-footer{
+        padding: 5%;
+        text-align: center;
+        a{
+            text-decoration: none;
+            padding: 1% 2.5%;
+            border: 2px solid $text-dark;
+            color: $text-dark;
+            font-size: calc(6px + 1.1vw);
+            border-radius: 15px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            &:hover{
+                color: $white;
+                background-color: $primary;
+                border: 2px solid $primary;
+            }
+            @media screen and (max-width:600px) {
+                font-size: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}

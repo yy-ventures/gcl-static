@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.home-partnerships-section{
+    padding: 5%;
+    .partnership-header{
+        text-align: center;
+        h2{
+            color: $text-dark;
+            font-weight: 600;
+            font-size: calc(24px + 1.5vw);
+        }
+        p{
+            color: $text-dark;
+            font-size: calc(8px + 0.8vw);
+            width: 65%;
+            margin: 2.5% auto 0 auto;
+            @media screen and (max-width: 600px) {
+                width: 90%;
+                font-size: 14px;
+            }
+        }
+    }
+    .partnership-body{
+        padding: 5% 5% 2.5% 5%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @media screen and (max-width: 600px){
+            grid-template-columns: repeat(2, 1fr); 
+        }
+        gap: 4em 2em;
+        justify-items: center;
+        .brand-container{
+            padding: 5%;
+            a{  
+                display: block;
+                text-decoration: none;
+                img{
+                    width: 75%;
+                    aspect-ratio: 16 / 9;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
