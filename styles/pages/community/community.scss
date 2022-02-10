@@ -1,4 +1,7 @@
-@import "../../global.scss";
+@import "../../base/base-style.scss";
+
+@import "../../components/header";
+
 @import "./resources-slider";
 @import "./blog-slider";
 

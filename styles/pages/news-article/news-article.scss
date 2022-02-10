@@ -3,78 +3,10 @@
 @import '../../sass/variables';
 
 @import '../../base/base-style.scss';
-@import '../../components/header/header.scss';
+@import '../../components/header';
 @import '../../components/button';
 
-.header-section {
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $white;
-        padding: 1% 5%;
-        .logo {
-            img {
-                height: 100%;
-            }
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-around;
-            width: 50%;
 
-            @include response(phone){
-                display: none;
-            }
-
-            li {
-                list-style-type: none;
-                a {
-                    color: $text-dark;
-                    text-decoration: none;
-                    font-weight: 600;
-                    font-size: calc(10px + 0.5vw);
-                    padding: 10px 0;
-                    transition: 0.3s;
-                    @media screen and (max-width:600px) {
-                        font-size: 16px;
-                    }
-                    &:hover{
-                        color: $primary;
-                    }
-                }
-            }
-            .page-active{
-                color: $primary;
-            }
-        }
-        .burger {
-            display: none;
-            cursor: pointer;
-            .burger-line{
-                width: 25px;
-                height: 3px;
-                background-color: $text-dark;
-                margin: 5px;
-            }
-        }   
-        .toggle{
-            .line1{
-                transform: rotate(-45deg) translate(-5px, 6px);
-                transition: transform 0.2s ease-in;
-            }
-            .line2{
-                opacity: 0;
-            }
-            .line3{
-                transform: rotate(45deg) translate(-5px, -6px);
-                transition: transform 0.2s ease-in;
-            }
-        }
-    }
-}
-
-// ----------- MAIN BODY --------------->
 
 .news-article{
     margin-bottom: 10rem;
