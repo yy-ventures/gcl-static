@@ -1,0 +1,46 @@
+@import "../../global.scss";
+
+.email-person{
+    padding: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+    .email-person-data{
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 600px) {
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 10%;
+        }
+        .data-content{
+            margin-left: 5%;
+        }
+        img{
+            width: 100%;
+        }
+        h5{
+            font-size: 24px;
+            font-weight: 500;
+            color: $text-dark;
+        }
+        p{
+            font-size: 16px;
+        }
+        .email-author{
+            margin-top: 5%;
+            font-weight: 600;
+        }
+        .designation{
+            margin-top: 2%;
+        }
+        a{
+            color: $text-dark;
+            margin-top: 2%;
+        }
+    }
+}

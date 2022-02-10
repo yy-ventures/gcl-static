@@ -1,0 +1,70 @@
+@import "../../global.scss";
+
+.contact-form{
+    padding: 5% 10%;
+    background-image: url("../../../assets/contact/contact_us_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .form-container{
+        margin-left: 10%;
+        @media screen and (max-width: 600px) {
+            margin-left: 0;
+        }
+        h2{
+            color: $text-dark;
+            font-weight: 500;
+        }
+        .input-box{
+            margin-top: 2.5%;
+            label{
+                display: block;
+                color: $text-dark;
+                margin-bottom: 0.5%;
+            }
+            input{
+                display: block;
+                padding: 15px 16px;
+                color: $text-dark;
+                width: 500px;
+                outline: 0;
+                border: 2px solid $text-dark;
+                border-radius: 5px;
+                font-size: 16px;
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+            textarea{
+                font-size: 16px;
+                display: block;
+                outline: 0;
+                padding: 15px 16px;
+                color: $text-dark;
+                width: 500px;
+                height: 200px;
+                border: 2px solid $text-dark;
+                border-radius: 5px;
+                background-color: rgba($color: #fff, $alpha: 0.9);
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+            button{
+                outline: 0;
+                border: 2px solid $text-dark;
+                background-color: inherit;
+                padding: 0.6em 2.1em;
+                font-size: 18px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    color: $primary;
+                    border: 2px solid $primary;
+                }
+            }
+        }
+    }
+}
