@@ -2047,6 +2047,7 @@ body {
     height: 600px;
     background-image: none;
     background-color: #72725D;
+    border-top: 5px solid #F9CA48;
   }
 }
 
