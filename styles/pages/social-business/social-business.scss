@@ -2,6 +2,7 @@
 
 @import '../../components/button';
 @import '../../components/header';
+@import '../../components/footer';
 
 @import '../../sass/variables';
 @import '../../sass/typography';
@@ -34,10 +35,10 @@
                 font-weight: 600;
                 line-height: 4.3rem;
 
-                // @include response(phone){
-                //     font-size: 2rem;
-                //     line-height: 3.3rem;
-                // }
+                @include response(phone){
+                    font-size: 2rem;
+                    line-height: 3.3rem;
+                }
             }
 
             .name{

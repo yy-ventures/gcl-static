@@ -6,6 +6,12 @@
     padding: 1rem 2rem;
     border-radius: .5rem;
     cursor: pointer;
+
+    @include response(M-phone){
+        font-size: 1.6rem;
+        padding: .8rem 1.6rem;
+        border-radius: .5rem;
+    }
 }
 
 .btn-primary{

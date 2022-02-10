@@ -143,6 +143,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -1035,6 +1041,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -1046,6 +1058,14 @@ body {
   padding: 1rem 2rem;
   border-radius: .5rem;
   cursor: pointer;
+}
+
+@media (max-width: 35.5em) {
+  .btn {
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    border-radius: .5rem;
+  }
 }
 
 .btn-primary {
@@ -2022,6 +2042,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -2357,6 +2383,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -2598,6 +2630,57 @@ p {
     z-index: 1000;
   }
   .header-section nav {
+    height: 8rem;
+  }
+  .header-section nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    top: 80px;
+    background-color: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateY(calc(-100% - 80px));
+            transform: translateY(calc(-100% - 80px));
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 2;
+  }
+  .header-section nav .nav-links li {
+    opacity: 0;
+    padding: 5% 0;
+  }
+  .header-section nav .nav-links li a {
+    color: #F9F9F9;
+  }
+  .header-section nav .logo img {
+    height: 40%;
+  }
+  .header-section nav .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .header-section nav .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 60em) {
+  .header-section {
+    z-index: 1000;
+  }
+  .header-section nav {
     height: 80px;
   }
   .header-section nav .nav-links {
@@ -2760,7 +2843,10 @@ p {
 }
 
 .person-slider-container .person-data .person-data-grid .person-image img {
-  width: 95%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   position: absolute;
   bottom: 0;
   left: 50%;

@@ -2,6 +2,7 @@
 
 @import '../../components/button';
 @import '../../components/header';
+@import '../../components/footer';
 
 @import '../../sass/variables';
 @import '../../sass/mixins';
@@ -28,10 +29,15 @@
         &--content{
             color: $text-light;
             text-align: center;
-    
-            .heading{
-                font-size: 3.2rem;
-                font-weight: 400;
+        }
+        &--heading{
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 3.9rem;
+
+            @include response(phone){
+                font-size: 2rem;
+                line-height: 3.3rem;
             }
         }
     }

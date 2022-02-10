@@ -136,6 +136,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -278,6 +284,12 @@ html {
   }
 }
 
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -289,6 +301,14 @@ body {
   padding: 1rem 2rem;
   border-radius: .5rem;
   cursor: pointer;
+}
+
+@media (max-width: 35.5em) {
+  .btn {
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    border-radius: .5rem;
+  }
 }
 
 .btn-primary {
