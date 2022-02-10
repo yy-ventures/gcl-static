@@ -1,7 +1,10 @@
 @import '../../base/base-style.scss';
-@import '../../sass/variables';
+
 @import '../../components/button';
+
+@import '../../sass/variables';
 @import '../../sass/mixins';
+@import '../../sass/typography';
 
 .about{
     
@@ -11,7 +14,6 @@
         background-repeat: no-repeat;
         
         height: 70vw;
-        margin-top: -2rem;
         padding: 0 20%;
 
         @include response(phone){

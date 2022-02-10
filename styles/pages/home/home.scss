@@ -1,10 +1,11 @@
-@import "../../global.scss";
+@import "../../base/base-style.scss";
+@import "../../sass/mixins";
 @import "./who-we-are";
 @import "./our-impact";
 @import "./home-highlight";
 @import "./people-say";
 @import "./home-partnerships";
-@import "../../components/footer/footer.scss";
+@import "../../components/footer";
 
 .header-section {
     nav {
@@ -12,7 +13,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: $white;
-        padding: 1% 5%;
+        padding: .7rem 5rem;
         .logo {
             img {
                 height: 100%;
@@ -210,7 +211,7 @@
 
 // media queries
 
-@media screen and (max-width: 600px) {
+@include response(phone) {
     .header-section{
         z-index: 1000;
         nav{

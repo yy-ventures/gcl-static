@@ -511,6 +511,83 @@ $breakpoint arguments choice:
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
 
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-section {
+    z-index: 1000;
+  }
+  .header-section nav {
+    height: 80px;
+  }
+  .header-section nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    top: 80px;
+    background-color: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateY(calc(-100% - 80px));
+            transform: translateY(calc(-100% - 80px));
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 2;
+  }
+  .header-section nav .nav-links li {
+    opacity: 0;
+    padding: 5% 0;
+  }
+  .header-section nav .nav-links li a {
+    color: #F9F9F9;
+  }
+  .header-section nav .logo img {
+    height: 50%;
+  }
+  .header-section nav .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .header-section nav .burger {
+    display: block;
+  }
+}
+
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
