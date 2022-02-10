@@ -1,0 +1,67 @@
+@import "../../global.scss";
+
+.press-container{
+    padding: 5% 10%;
+    .center{
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+    .top{
+        margin-top: 5%;
+    }
+    .documents-container{
+        h2{
+            color: $text-dark;
+            padding-bottom: 5%;
+            font-weight: 600;
+            font-size: 40px;
+            @media screen and (max-width: 600px) {
+                font-size: 24px;
+            }
+        }
+        .document-list{
+            padding: 1% 2.5%;
+            background-color: $text-light;
+            margin-top: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                padding: 5% 2.5%;
+            }
+            ul{
+                li{
+                    list-style-type: none;
+                    display: inline;
+                }
+            }
+            img{
+                height: 100%;
+            }
+            h5{
+                color: $text-dark;
+            }
+            button{
+                outline: 0;
+                border: 2px solid $text-dark;
+                color: $text-dark;
+                padding: 0.6em 1.5em;
+                background-color: inherit;
+                font-size: 16px;
+                border-radius: 10px;
+                text-transform: uppercase;
+                transition: 0.3s;
+                font-weight: 500;
+                cursor: pointer;
+                &:hover{
+                    color: $text-light;
+                    background-color: $text-dark;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../global.scss";
+@import "./joinus";
+@import "./contact-person";
+@import "./form";
+
+// community banner
+.contact-banner {
+    height: 60vw;
+    background-image: url("../../../assets/images/gcl-header/banner-contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contact-banner-content{
+        width: 60%;
+        text-align: center;
+        @media screen and (max-width:600px) {
+            width: 80%;
+        }
+        h2{
+            color: $white;
+            font-size: calc(8px + 2vw);
+            font-weight: 500;
+            @media screen and (max-width:600px) {
+                font-size: 16px;
+            }
+        }
+        p{
+            font-size: calc(8px + 1vw);
+            margin-top: 2.5%;
+        }
+    }
+}
+
+.contact-headline{
+    padding: 7.5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        color: $text-dark;
+        font-size: calc(12px + 2vw);
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
+    }
+}
