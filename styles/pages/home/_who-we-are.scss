@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 .who-we-are{
-    padding: 5% 0 5% 0;
+    padding: 5% 0 0 0;
     background-image: url("../../../assets/who-we-are-bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@
             }
         }
     }
-    .what-we-do-container{    
+    .what-we-do-container{  
         .what-we-do-header{
             margin: 0 auto;
             width: 50%;
@@ -85,6 +85,23 @@
             @media screen and (max-width: 600px) {
                 padding: 5% 0 0 0;
             }
+            position: relative;
+            .path-line{
+                @media screen and (max-width: 600px) {
+                    display: none;
+                } 
+                svg{
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 100%;
+                    overflow: hidden;
+                    text-align: center;
+                    display: inline-block;
+                    height: 100%;
+                }
+            }  
             .inspire-grid{
                 display: grid;
                 grid-template-columns: 1fr 1fr;

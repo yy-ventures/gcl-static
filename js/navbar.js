@@ -30,8 +30,7 @@ navSlide();
 const navActive = () => {
     const navParent = document.querySelector("#navMenu");
     let currentLink = document.querySelector(`#navMenu li a[href="${location.pathname}"]`);
-    console.log(currentLink)
-
+    
     // adding a active class name
     currentLink.classList.add("page-active");
 

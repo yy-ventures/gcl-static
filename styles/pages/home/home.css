@@ -306,7 +306,7 @@ body {
 }
 
 .who-we-are {
-  padding: 5% 0 5% 0;
+  padding: 5% 0 0 0;
   background-image: url("../../../assets/who-we-are-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -420,12 +420,32 @@ body {
 
 .who-we-are .what-we-do-container .what-we-do-body {
   padding: 5% 0;
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
   .who-we-are .what-we-do-container .what-we-do-body {
     padding: 5% 0 0 0;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .who-we-are .what-we-do-container .what-we-do-body .path-line {
+    display: none;
+  }
+}
+
+.who-we-are .what-we-do-container .what-we-do-body .path-line svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 100%;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
 }
 
 .who-we-are .what-we-do-container .what-we-do-body .inspire-grid {
