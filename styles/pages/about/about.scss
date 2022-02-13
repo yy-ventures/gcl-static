@@ -17,23 +17,27 @@
         
         height: 70vw;
         padding: 0 20%;
-
-        @include response(phone){
-            padding: 0 5%;
-        }
-    
+        
         display: flex;
         align-items: center;
         justify-content: center;
-    
+        
+        @include response(phone){
+            padding: 0 5%;
+        }
+
+        @include response(tab-port){
+            padding: 0 8%;
+        }
+
         &--content{
             color: $text-light;
             text-align: center;
         }
         &--heading{
+            font-size: 3.5rem;
             font-weight: 600;
-            font-size: 3.2rem;
-            line-height: 3.9rem;
+            line-height: 4.3rem;
 
             @include response(phone){
                 font-size: 2rem;
@@ -45,8 +49,14 @@
     &__us{
 
         &--heading{
+            font-weight: 600;
+            font-size: 4.8rem;
             margin-bottom: 3rem;
             text-align: center;
+
+            @include response(phone){
+                font-size: 3rem;
+            }
         }
 
         &--btn-group{
@@ -150,8 +160,11 @@
                 padding: 8rem;
                 background-color: $background-grey;
 
+                @include response(tab-port){
+                    padding: 6rem;
+                }
                 @include response(phone){
-                    padding: 4rem;
+                    padding: 3rem;
                 }
             }
         }
@@ -160,8 +173,9 @@
         display: flex;
         justify-content: center;
 
+
         .text{
-            font-size: 1.3rem;
+            font-size: 1.8rem;
         }
 
         .container{
@@ -170,16 +184,16 @@
 
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 3rem;
         }
 
         .logo-container{
             display: flex;
-            justify-content: center;
-            gap: 1rem;
+            justify-content: space-around;
+            gap: 2rem;
 
             .logo{
-                height: 7rem;
+                height: 8rem;
             }
         }
     }
@@ -196,6 +210,19 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
             grid-gap: 2rem;
+
+            @include response(big-desktop){
+                grid-template-columns: repeat(5, minmax(18rem, 1fr));
+                width: 70%;
+                margin: 0 auto;
+            }
+            @include response(tab-port){
+                grid-template-columns: repeat(3, minmax(18rem, 1fr));
+            }
+            @include response(phone){
+                grid-template-columns: repeat(2, minmax(18rem, 1fr));
+            }
+
 
             .member{
                 width: max-content;

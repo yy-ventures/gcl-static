@@ -17,18 +17,18 @@
         
         height: 60vw;
         padding: 0 20%;
-
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
         @include response(phone){
             padding: 0 5%;
         }
         @include response(tab-port){
             padding: 0 8%;
         }
-    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+
         &--content{
             color: $text-light;
             text-align: center;
@@ -96,6 +96,11 @@
                 grid-column: col-start 1 / col-end 1;
                 grid-row: row-start 1 / row-end 1;
                 
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 1 / row-end 1;
+                }
+                
                 .heading{
                     font-size: 3.6rem;
                     font-weight: 600;
@@ -107,10 +112,6 @@
                     }
                 }
 
-                @include response(phone){
-                    grid-column: col-start / col-end;
-                    grid-row: row-start 1 / row-end 1;
-                }
             }
             .image-1{
                 grid-column: col-start 2 / col-end 2;
