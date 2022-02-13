@@ -1,10 +1,18 @@
 @import '../../base/base-style.scss';
+
 @import '../../components/button';
+@import '../../components/header';
+
 @import '../../sass/mixins';
+@import '../../sass/typography';
+@import '../../sass/variables';
 
 .team-member{
     padding: 0 15rem;
 
+    @include response (tab-port){
+        padding: 0 10rem;
+    }
     @include response(phone){
         padding: 0 5rem;
     }
@@ -26,17 +34,23 @@
         &--image-container{
             grid-column: col-start 1 / col-end 1;
 
+            width: 44.9rem;
+            height: 57.2rem;
+            justify-self: center;
+            
+
             @include response(phone){
                 grid-column: col-start / col-end;
                 grid-row: row-start 1 / row-end 1;
 
-                display: flex;
-                justify-content: center;
+                width: auto;
+                height: auto;
             }
 
             .image{
-                width: 44.9rem;
-                height: 57.2rem;
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
             }
         }
         &--text-container{
