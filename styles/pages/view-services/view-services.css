@@ -1326,6 +1326,7 @@ p {
 
 .view-services__media {
   border-bottom: 1px solid #A3A3A3;
+  margin-top: 2rem;
 }
 
 .view-services__media .container {
