@@ -8,13 +8,13 @@
 @import '../../sass/variables';
 
 .team-member{
-    padding: 0 15rem;
+    padding: 0 10rem;
 
     @include response (tab-port){
-        padding: 0 10rem;
+        padding: 0 6rem;
     }
     @include response(phone){
-        padding: 0 5rem;
+        padding: 0 4rem;
     }
 
     &__btn-container{
@@ -26,9 +26,14 @@
         grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
         grid-gap: 12rem;
 
+        @include response(tab-port){
+            grid-gap: 8rem;
+        }
+
         @include response(phone){
             grid-template-columns: [col-start] 1fr [col-end];
             grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+            grid-gap: 8rem;
         }
 
         &--image-container{
@@ -78,6 +83,11 @@
                 position: absolute;
                 top: -3rem;
                 left: -3rem;
+
+                @include response(phone){
+                    top: -2rem;
+                    left: -2rem;
+                }
             }
             .details-container{
                 font-size: 1.6rem;
