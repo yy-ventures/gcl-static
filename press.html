@@ -20,12 +20,15 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./styles/gallery.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body>
     <section class="press-container">
         <!-- documents -->
-        <div class="documents-container">
+        <div class="documents-container gcl-reveal">
             <h2 class="center">Documents</h2>
             <div class="document-list">
                 <div class="flex">
@@ -49,7 +52,7 @@
             </div>
         </div>
         <!-- logos -->
-        <div class="documents-container top">
+        <div class="documents-container top gcl-reveal">
             <h2 class="center">Logo</h2>
             <div class="document-list">
                 <div class="flex">
@@ -76,10 +79,47 @@
         <!-- photo gallery -->
         <div class="documents-container top">
             <h2 class="center">Photo Gallery</h2>
+            <div id="app">
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644675530507-f4c9e214dd04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644677851839-af290269c2f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644611390368-6b948e96dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644582698270-48c240dfa6f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644419306573-b468b7c636bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644412447376-57f7660a7467?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644447381290-85358ae625cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644469585151-77978a71dfed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80" alt="" />
+                </div>
+                <div class="grid-img gcl-reveal">
+                    <img src="https://images.unsplash.com/photo-1644447327420-c618c033e4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
+                </div>
+            </div>
         </div>
     </section>    
     <!-- scripts -->
     <script src="./js/navbar.js"></script>
+    <script src="./js/img-previewer.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const a = new ImgPreviewer('body', {
+			scrollbar: true
+		})
+        ScrollReveal({ reset: true }).reveal('.gcl-reveal', { duration: 1500, delay: 250 });
+    </script>
 </body>
 
 </html>

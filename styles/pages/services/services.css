@@ -72,6 +72,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -127,6 +133,7 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -220,6 +227,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -275,6 +288,7 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -366,6 +380,12 @@ h6 {
 
 p {
   color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 .mb-1 {
@@ -700,6 +720,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -755,6 +781,7 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -1041,6 +1068,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1276,6 +1309,12 @@ h6 {
 
 p {
   color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 .mb-1 {
