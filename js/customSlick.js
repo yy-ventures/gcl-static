@@ -201,6 +201,10 @@ $(document).ready(function () {
   });
 });
 
+// view-service-slider-container
+
+// view service slider
+
 
 // service inspire slider
 
