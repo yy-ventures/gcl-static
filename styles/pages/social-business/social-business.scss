@@ -21,6 +21,9 @@
         @include response(phone){
             padding: 0 5%;
         }
+        @include response(tab-port){
+            padding: 0 8%;
+        }
     
         display: flex;
         align-items: center;
@@ -62,6 +65,10 @@
             font-size: 4.8rem;
             margin-bottom: 3rem;
             text-align: center;
+
+            @include response(phone){
+                font-size: 3rem;
+            }
         }
 
         &--btn-group{
@@ -98,6 +105,11 @@
                     font-size: 3.6rem;
                     font-weight: 600;
                     line-height: 4.3rem;
+
+                    @include response(phone){
+                        font-size: 2.5rem;
+                        line-height: 3.3rem;
+                    }
                 }
 
                 @include response(phone){
@@ -122,6 +134,11 @@
                     font-size: 3.6rem;
                     font-weight: 600;
                     line-height: 4.3rem;
+
+                    @include response(phone){
+                        font-size: 2.5rem;
+                        line-height: 3.3rem;
+                    }
                 }
 
                 @include response(phone){
@@ -146,6 +163,11 @@
                     font-size: 3.6rem;
                     font-weight: 600;
                     line-height: 4.3rem;
+
+                    @include response(phone){
+                        font-size: 2.5rem;
+                        line-height: 3.3rem;
+                    }
                 }
 
                 @include response(phone){
@@ -183,28 +205,45 @@
                 padding: 8rem;
                 background-color: $background-grey;
 
-                @include response(phone){
-                    padding: 4rem;
+                @include response(tab-port){
+                    padding: 6rem;
                 }
+                @include response(phone){
+                    padding: 3rem;
+                }
+                
             }
         }
     }
 
     &__video{
         height: 70rem;
+        padding: 2rem 0;
+
+        @include response(phone){
+            height: 45rem;
+        }
+        @include response(s-phone){
+            height: 40rem;
+        }
     }
 
     &__goal{
-        padding: 10rem;
+        padding: 8rem;
 
-        @include response(phone){
-            padding: 5rem;
+        @include response(tab-port){
+            padding: 6rem;
         }
+        @include response(phone){
+            padding: 3rem;
+        }
+
 
         .container{
 
             display: grid;
             grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+            grid-gap: 2rem;
 
             @include response(phone){
                 grid-template-columns: [col-start] 1fr [col-end];
@@ -242,6 +281,8 @@
             }
         }
         &--btn-container{
+            padding: 2rem 0;
+
             display: flex;
             justify-content: center;
         }

@@ -53,10 +53,10 @@ p{
 
 //custom class
 .container-1{
-    padding: 10rem;
+    padding: 8rem;
 
     @include response(phone){
-        padding: 5rem;
+        padding: 3rem;
     }
 }
 .text-center{
