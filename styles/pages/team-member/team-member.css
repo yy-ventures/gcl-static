@@ -36,6 +36,7 @@ $breakpoint arguments choice:
 - big-desktop
 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 700;
@@ -100,12 +101,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -255,12 +256,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -401,13 +402,600 @@ $breakpoint arguments choice:
 - tab-land
 - big-desktop
 */
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+.header-section nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  padding: .7rem 5rem;
+}
+
+.header-section nav .logo img {
+  height: 100%;
+}
+
+.header-section nav .nav-links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 2rem;
+}
+
+.header-section nav .nav-links li {
+  list-style-type: none;
+}
+
+.header-section nav .nav-links li a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: calc(10px + 0.5vw);
+  padding: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.header-section nav .nav-links li a:hover {
+  color: #F9CA48;
+}
+
+.header-section nav .nav-links .page-active {
+  color: #F9CA48;
+}
+
+.header-section nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.header-section nav .burger .burger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #222222;
+  margin: 5px;
+}
+
+.header-section nav .toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+.header-section nav .toggle .line2 {
+  opacity: 0;
+}
+
+.header-section nav .toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@media (max-width: 40em) {
+  .header-section {
+    z-index: 1000;
+  }
+  .header-section nav {
+    height: 8rem;
+  }
+  .header-section nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    top: 80px;
+    background-color: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateY(calc(-100% - 80px));
+            transform: translateY(calc(-100% - 80px));
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 2;
+  }
+  .header-section nav .nav-links li {
+    opacity: 0;
+    padding: 5% 0;
+  }
+  .header-section nav .nav-links li a {
+    color: #F9F9F9;
+  }
+  .header-section nav .logo img {
+    height: 40%;
+  }
+  .header-section nav .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .header-section nav .burger {
+    display: block;
+  }
+}
+
+@media (max-width: 60em) {
+  .header-section {
+    z-index: 1000;
+  }
+  .header-section nav {
+    height: 80px;
+  }
+  .header-section nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 90vh;
+    top: 80px;
+    background-color: #222222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-transform: translateY(calc(-100% - 80px));
+            transform: translateY(calc(-100% - 80px));
+    -webkit-transition: -webkit-transform 0.3s ease-in;
+    transition: -webkit-transform 0.3s ease-in;
+    transition: transform 0.3s ease-in;
+    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+    z-index: 2;
+  }
+  .header-section nav .nav-links li {
+    opacity: 0;
+    padding: 5% 0;
+  }
+  .header-section nav .nav-links li a {
+    color: #F9F9F9;
+  }
+  .header-section nav .logo img {
+    height: 50%;
+  }
+  .header-section nav .nav-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .header-section nav .burger {
+    display: block;
+  }
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
 .team-member {
-  padding: 0 15rem;
+  padding: 0 10rem;
+}
+
+@media (max-width: 60em) {
+  .team-member {
+    padding: 0 6rem;
+  }
 }
 
 @media (max-width: 40em) {
   .team-member {
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
 }
 
@@ -423,6 +1011,12 @@ $breakpoint arguments choice:
   grid-gap: 12rem;
 }
 
+@media (max-width: 60em) {
+  .team-member__info {
+    grid-gap: 8rem;
+  }
+}
+
 @media (max-width: 40em) {
   .team-member__info {
     -ms-grid-columns: [col-start] 1fr [col-end];
@@ -430,29 +1024,32 @@ $breakpoint arguments choice:
     -ms-grid-rows: ([row-start] min-content [row-end])[2];
         grid-template-rows: repeat(2, [row-start] -webkit-min-content [row-end]);
         grid-template-rows: repeat(2, [row-start] min-content [row-end]);
+    grid-gap: 8rem;
   }
 }
 
 .team-member__info--image-container {
   grid-column: col-start 1 / col-end 1;
+  width: 44.9rem;
+  height: 57.2rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media (max-width: 40em) {
   .team-member__info--image-container {
     grid-column: col-start / col-end;
     grid-row: row-start 1 / row-end 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: auto;
+    height: auto;
   }
 }
 
 .team-member__info--image-container .image {
-  width: 44.9rem;
-  height: 57.2rem;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .team-member__info--text-container {
@@ -481,6 +1078,13 @@ $breakpoint arguments choice:
   position: absolute;
   top: -3rem;
   left: -3rem;
+}
+
+@media (max-width: 40em) {
+  .team-member__info--text-container .layout {
+    top: -2rem;
+    left: -2rem;
+  }
 }
 
 .team-member__info--text-container .details-container {

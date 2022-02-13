@@ -102,12 +102,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -257,12 +257,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -485,12 +485,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -640,12 +640,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -978,12 +978,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -1308,12 +1308,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -1374,6 +1374,12 @@ $breakpoint arguments choice:
   }
 }
 
+@media (max-width: 60em) {
+  .social-business__header {
+    padding: 0 8%;
+  }
+}
+
 .social-business__header--content {
   color: #F9F9F9;
   text-align: center;
@@ -1404,6 +1410,12 @@ $breakpoint arguments choice:
   font-size: 4.8rem;
   margin-bottom: 3rem;
   text-align: center;
+}
+
+@media (max-width: 40em) {
+  .social-business__social--heading {
+    font-size: 3rem;
+  }
 }
 
 .social-business__social--btn-group {
@@ -1459,6 +1471,13 @@ $breakpoint arguments choice:
   grid-row: row-start 1 / row-end 1;
 }
 
+@media (max-width: 40em) {
+  .social-business__social--info .info-1 {
+    grid-column: col-start / col-end;
+    grid-row: row-start 1 / row-end 1;
+  }
+}
+
 .social-business__social--info .info-1 .heading {
   font-size: 3.6rem;
   font-weight: 600;
@@ -1466,9 +1485,9 @@ $breakpoint arguments choice:
 }
 
 @media (max-width: 40em) {
-  .social-business__social--info .info-1 {
-    grid-column: col-start / col-end;
-    grid-row: row-start 1 / row-end 1;
+  .social-business__social--info .info-1 .heading {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
   }
 }
 
@@ -1493,6 +1512,13 @@ $breakpoint arguments choice:
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 4.3rem;
+}
+
+@media (max-width: 40em) {
+  .social-business__social--info .info-2 .heading {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
 }
 
 @media (max-width: 40em) {
@@ -1523,6 +1549,13 @@ $breakpoint arguments choice:
   font-size: 3.6rem;
   font-weight: 600;
   line-height: 4.3rem;
+}
+
+@media (max-width: 40em) {
+  .social-business__social--info .info-3 .heading {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
 }
 
 @media (max-width: 40em) {
@@ -1568,23 +1601,48 @@ $breakpoint arguments choice:
   background-color: #F9F9F9;
 }
 
+@media (max-width: 60em) {
+  .social-business__social--info .text-container {
+    padding: 6rem;
+  }
+}
+
 @media (max-width: 40em) {
   .social-business__social--info .text-container {
-    padding: 4rem;
+    padding: 3rem;
   }
 }
 
 .social-business__video {
   height: 70rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 40em) {
+  .social-business__video {
+    height: 45rem;
+  }
+}
+
+@media (max-width: 26.88em) {
+  .social-business__video {
+    height: 40rem;
+  }
 }
 
 .social-business__goal {
-  padding: 10rem;
+  padding: 8rem;
+}
+
+@media (max-width: 60em) {
+  .social-business__goal {
+    padding: 6rem;
+  }
 }
 
 @media (max-width: 40em) {
   .social-business__goal {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -1593,6 +1651,7 @@ $breakpoint arguments choice:
   display: grid;
   -ms-grid-columns: ([col-start] 1fr [col-end])[2];
       grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
+  grid-gap: 2rem;
 }
 
 @media (max-width: 40em) {
@@ -1643,6 +1702,7 @@ $breakpoint arguments choice:
 }
 
 .social-business__goal--btn-container {
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
