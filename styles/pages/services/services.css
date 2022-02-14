@@ -72,6 +72,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -128,10 +134,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -150,6 +161,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 /*
@@ -221,6 +233,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -277,10 +295,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -299,6 +322,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 /*
@@ -368,6 +392,12 @@ h6 {
 
 p {
   color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 .mb-1 {
@@ -702,6 +732,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -758,10 +794,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -780,6 +821,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .footer-container {
@@ -1044,6 +1086,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1099,12 +1147,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .inspire-slider {
@@ -1281,6 +1331,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1336,12 +1392,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .service-highlight {

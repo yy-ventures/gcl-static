@@ -68,6 +68,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -123,11 +129,31 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=global.css.map */

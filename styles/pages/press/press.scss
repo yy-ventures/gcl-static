@@ -1,4 +1,5 @@
 @import "../../global.scss";
+@import './image-gallery';
 
 .press-container{
     padding: 5% 10%;
@@ -32,6 +33,7 @@
             @media screen and (max-width: 600px) {
                 flex-direction: column;
                 padding: 5% 2.5%;
+                justify-content: space-evenly;
             }
             ul{
                 li{

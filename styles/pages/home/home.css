@@ -76,6 +76,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -131,11 +137,16 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+<<<<<<< HEAD
   scroll-behavior: smooth;
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -154,6 +165,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -243,6 +256,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -298,12 +317,32 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .who-we-are {
@@ -863,6 +902,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -918,12 +963,32 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -995,6 +1060,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1051,10 +1122,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -1073,6 +1149,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -1323,6 +1401,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1378,12 +1462,32 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .home-highlight {
@@ -1577,6 +1681,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1632,12 +1742,32 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .people-say-container {
@@ -1804,6 +1934,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1859,12 +1995,32 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .home-partnerships-section {
@@ -1997,6 +2153,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -2053,10 +2215,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -2075,6 +2242,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -2339,6 +2508,12 @@ p {
   color: #222222;
 }
 
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -2395,10 +2570,15 @@ p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  font-family: 'Montserrat', sans-serif;
+>>>>>>> 03bc42513f42c16b90c5496418ad019dd108538d
 }
 
 html {
   font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 40em) {
@@ -2417,6 +2597,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -2486,6 +2668,12 @@ h6 {
 
 p {
   color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
 }
 
 .mb-1 {
@@ -2868,14 +3056,20 @@ p {
 
 .person-slider-container .person-data .person-data-grid .person-image img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
   position: absolute;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  .person-slider-container .person-data .person-data-grid .person-image img {
+    min-height: 250px;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .person-slider-container .person-data .person-data-grid .person-quote {
