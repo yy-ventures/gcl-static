@@ -11,8 +11,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    font-size: 62.5%; // 1 rem = 10px
+    font-family: 'Montserrat', sans-serif;
+    @include response(phone){
+        font-size: 50%;
+    }
+    @include response(tab-port){
+        font-size: 50%;
+    }
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
 }

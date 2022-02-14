@@ -137,7 +137,6 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -162,6 +161,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -315,10 +316,29 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .who-we-are {
@@ -942,10 +962,29 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*
@@ -1103,6 +1142,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .btn {
@@ -1417,10 +1458,29 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .home-highlight {
@@ -1678,10 +1738,29 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .people-say-container {
@@ -1912,10 +1991,29 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .home-partnerships-section {
@@ -2134,6 +2232,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -2484,6 +2584,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /*

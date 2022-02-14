@@ -100,12 +100,12 @@ p {
 }
 
 .container-1 {
-  padding: 10rem;
+  padding: 8rem;
 }
 
 @media (max-width: 40em) {
   .container-1 {
-    padding: 5rem;
+    padding: 3rem;
   }
 }
 
@@ -130,12 +130,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 /*
@@ -268,12 +270,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 #app {

@@ -154,5 +154,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=base-style.css.map */

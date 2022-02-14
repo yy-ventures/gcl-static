@@ -132,12 +132,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 /*
@@ -270,12 +272,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .join-us-container {
@@ -701,12 +705,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .email-person {
@@ -918,12 +924,14 @@ p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   overflow-x: hidden;
+  max-width: 1920px;
 }
 
 .contact-form {
