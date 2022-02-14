@@ -7,8 +7,8 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         fade: true,
-        prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
-        nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+        prevArrow: '<span class="person-prev-arrow"><img src="/frontend/assets/icons/arrow-left.svg" alt=""></span>',
+        nextArrow: '<span class="person-next-arrow"><img src="/frontend/assets/icons/arrow-right.svg" alt=""></span>',
         responsive: [
             {
               breakpoint: 1024,
@@ -45,8 +45,8 @@ $(document).ready(function () {
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
-      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
-      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+      prevArrow: '<span class="person-prev-arrow"><img src="/frontend/assets/icons/arrow-left.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="/frontend/assets/icons/arrow-right.svg" alt=""></span>',
       responsive: [
           {
             breakpoint: 1024,
@@ -83,8 +83,8 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
-      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left-white.svg" alt=""></span>',
-      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right-white.svg" alt=""></span>',
+      prevArrow: '<span class="person-prev-arrow"><img src="/frontend/assets/icons/arrow-left-white.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="/frontend/assets/icons/arrow-right-white.svg" alt=""></span>',
       responsive: [
           {
             breakpoint: 1024,
@@ -121,8 +121,8 @@ $(document).ready(function () {
       infinite: true,
       slidesToShow: 5,
       slidesToScroll: 1,
-      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
-      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+      prevArrow: '<span class="person-prev-arrow"><img src="/frontend/assets/icons/arrow-left.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="/frontend/assets/icons/arrow-right.svg" alt=""></span>',
       responsive: [
         {
           breakpoint: 1300,
@@ -165,8 +165,8 @@ $(document).ready(function () {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
-      prevArrow: '<span class="person-prev-arrow"><img src="./assets/icons/arrow-left.svg" alt=""></span>',
-      nextArrow: '<span class="person-next-arrow"><img src="./assets/icons/arrow-right.svg" alt=""></span>',
+      prevArrow: '<span class="person-prev-arrow"><img src="/frontend/assets/icons/arrow-left.svg" alt=""></span>',
+      nextArrow: '<span class="person-next-arrow"><img src="/frontend/assets/icons/arrow-right.svg" alt=""></span>',
       responsive: [
         {
           breakpoint: 1300,

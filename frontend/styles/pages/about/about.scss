@@ -1,0 +1,267 @@
+@import '../../base/base-style.scss';
+@import '../../components/button';
+@import '../../components/header';
+@import '../../components/footer';
+@import '../../sass/variables';
+@import '../../sass/mixins';
+@import '../../sass/typography';
+
+.about{
+    
+    &__header{
+        background-image: url(/frontend/assets/images/gcl-header/banner-about.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        height: 70vw;
+        padding: 0 20%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @include response(phone){
+            padding: 0 5%;
+        }
+
+        @include response(tab-port){
+            padding: 0 8%;
+        }
+
+        &--content{
+            color: $text-light;
+            text-align: center;
+        }
+        &--heading{
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 4.3rem;
+
+            @include response(phone){
+                font-size: 2rem;
+                line-height: 3.3rem;
+            }
+        }
+    }
+
+    &__us{
+
+        &--heading{
+            font-weight: 600;
+            font-size: 4.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+
+            @include response(phone){
+                font-size: 3rem;
+            }
+        }
+
+        &--btn-group{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            .group-1{
+                display: flex;
+                gap: 1rem;
+            }
+            .group-2{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        &--info{
+            display: grid;
+            grid-template-columns: repeat(2, [col-start] 50% [col-end]);
+            grid-template-rows: repeat(3, [row-start] min-content [row-end]);
+
+            @include response(phone){
+                grid-template-columns: [col-start] 1fr [col-end];
+                grid-template-rows: repeat(6, [row-start] min-content [row-end]);
+            }
+
+            .info-1{
+                grid-column: col-start 1 / col-end 1;
+                grid-row: row-start 1 / row-end 1;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 1 / row-end 1;
+                }
+            }
+            .image-1{
+                grid-column: col-start 2 / col-end 2;
+                grid-row: row-start 1 / row-end 1; 
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 2 / row-end 2;
+                }
+            }
+            .info-2{
+                grid-column: col-start 2 / col-end 2;
+                grid-row: row-start 2 / row-end 2;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 3 / row-end 3;
+                }
+            }
+            .image-2{
+                grid-column: col-start 1 / col-end 1;
+                grid-row: row-start 2 / row-end 2;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 4 / row-end 4;
+                }
+            }
+            .info-3{
+                grid-column: col-start 1 / col-end 1;
+                grid-row: row-start 3 / row-end 3;
+                
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 5 / row-end 5;
+                }
+            }
+            .image-3{
+                grid-column: col-start 2 / col-end 2;
+                grid-row: row-start 3 / row-end 3;
+
+                @include response(phone){
+                    grid-column: col-start / col-end;
+                    grid-row: row-start 6 / row-end 6;
+                }
+            }
+
+
+            .img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .content{
+                font-size: 1.8rem;
+
+                p:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            .img-container{
+                overflow: hidden;
+            }
+            .text-container{
+                padding: 8rem;
+                background-color: $background-grey;
+
+                @include response(tab-port){
+                    padding: 6rem;
+                }
+                @include response(phone){
+                    padding: 3rem;
+                }
+            }
+        }
+    }
+    &__contribution{
+        display: flex;
+        justify-content: center;
+
+
+        .text{
+            font-size: 1.8rem;
+        }
+
+        .container{
+            width: 50rem;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .logo-container{
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+
+            .logo{
+                height: 8rem;
+            }
+        }
+    }
+
+    &__team{
+        background-color: $background-grey;
+
+        &--heading{
+            text-align: center;
+            margin-bottom: 7rem;
+        }
+
+        &--container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+            grid-gap: 2rem;
+
+            @include response(big-desktop){
+                grid-template-columns: repeat(5, minmax(18rem, 1fr));
+                width: 70%;
+                margin: 0 auto;
+            }
+            @include response(tab-port){
+                grid-template-columns: repeat(3, minmax(18rem, 1fr));
+            }
+            @include response(phone){
+                grid-template-columns: repeat(2, minmax(18rem, 1fr));
+            }
+
+
+            .member{
+                width: max-content;
+                justify-self: center;
+
+                .img-container{
+                    margin-bottom: 1rem;
+                }
+
+                &__designation{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        &--box{
+            margin-top: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__family{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--logo-container{
+            width: 80%;
+            padding: 8rem 0;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 3em;
+
+            .logo{
+                height: 6rem;
+            }
+        }
+    }
+}

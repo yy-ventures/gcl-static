@@ -1,0 +1,1164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.join-us-container {
+  position: relative;
+}
+
+.join-us-container .path-decor {
+  height: 412px;
+}
+
+.join-us-container .path-decor img {
+  height: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+  .join-us-container .path-decor {
+    height: 360.5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .path-decor {
+    height: 206px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .path-decor {
+    display: none;
+  }
+}
+
+.join-us-container .path-top-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.join-us-container .path-top-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.join-us-container .path-bottom-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.join-us-container .path-bottom-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.join-us-container .decor-container {
+  height: 100%;
+  width: 841px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+@media screen and (max-width: 1439px) {
+  .join-us-container .decor-container {
+    width: 721px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .decor-container {
+    width: 412px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container {
+    padding: 5%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+.join-us-container .decor-container .decor {
+  width: 412px;
+  height: 412px;
+}
+
+@media screen and (max-width: 1439px) {
+  .join-us-container .decor-container .decor {
+    width: 360.5px;
+    height: 360.5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .decor-container .decor {
+    width: 206px;
+    height: 206px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.join-us-container .decor-container .decor-1 {
+  border-top-left-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
+.join-us-container .decor-container .decor-1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.join-us-container .decor-container .decor-2 {
+  background-color: #72725D;
+  border-bottom-right-radius: 200px;
+  padding: 5% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1439px) {
+  .join-us-container .decor-container .decor-2 {
+    border-bottom-right-radius: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .decor-container .decor-2 {
+    border-bottom-right-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-2 {
+    border-bottom-right-radius: 60px;
+  }
+}
+
+.join-us-container .decor-container .decor-2 h5 {
+  font-size: calc(10px + 1vw);
+  color: #F9F9F9;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-2 h5 {
+    font-size: 20px;
+  }
+}
+
+.join-us-container .decor-container .decor-2 p {
+  color: #F9F9F9;
+  font-size: calc(8px + 0.5vw);
+  padding: 2.5% 0 10% 0;
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-2 p {
+    font-size: 16px;
+  }
+}
+
+.join-us-container .decor-container .decor-2 a {
+  padding: 0.5em 1.5em;
+  border: 2px solid #F9F9F9;
+  font-size: calc(10px + 0.5vw);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.join-us-container .decor-container .decor-2 a:hover {
+  background-color: #F9F9F9;
+  color: #72725D;
+}
+
+.join-us-container .decor-container .decor-3 {
+  background-color: #A59E90;
+  border-bottom-left-radius: 200px;
+  padding: 5% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: right;
+}
+
+@media screen and (max-width: 1439px) {
+  .join-us-container .decor-container .decor-3 {
+    border-bottom-left-radius: 150px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .decor-container .decor-3 {
+    border-bottom-left-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-3 {
+    border-bottom-left-radius: 60px;
+  }
+}
+
+.join-us-container .decor-container .decor-3 h5 {
+  font-size: calc(10px + 1vw);
+  color: #F9F9F9;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-3 h5 {
+    font-size: 20px;
+  }
+}
+
+.join-us-container .decor-container .decor-3 p {
+  color: #F9F9F9;
+  font-size: calc(8px + 0.5vw);
+  padding: 2.5% 0 10% 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .join-us-container .decor-container .decor-3 p {
+    border-bottom-right-radius: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .join-us-container .decor-container .decor-3 p {
+    font-size: 16px;
+  }
+}
+
+.join-us-container .decor-container .decor-3 a {
+  padding: 0.5em 1.5em;
+  border: 2px solid #F9F9F9;
+  font-size: calc(10px + 0.5vw);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.join-us-container .decor-container .decor-3 a:hover {
+  background-color: #F9F9F9;
+  color: #A59E90;
+}
+
+.join-us-container .decor-container .decor-4 {
+  border-bottom-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+.join-us-container .decor-container .decor-4 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.email-person {
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .email-person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.email-person .email-person-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .email-person .email-person-data {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 10%;
+  }
+}
+
+.email-person .email-person-data .data-content {
+  margin-left: 5%;
+}
+
+.email-person .email-person-data img {
+  width: 100%;
+}
+
+.email-person .email-person-data h5 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #222222;
+}
+
+.email-person .email-person-data p {
+  font-size: 16px;
+}
+
+.email-person .email-person-data .email-author {
+  margin-top: 5%;
+  font-weight: 600;
+}
+
+.email-person .email-person-data .designation {
+  margin-top: 2%;
+}
+
+.email-person .email-person-data a {
+  color: #222222;
+  margin-top: 2%;
+}
+
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+0 - 430px;       small-phone
+430 - 568px:     medium-phone
+568 - 600px:     phone
+600 - 1000px:    tablet portrait
+900 - 1300px:    tablet landscape
+[1300 - 1800px] is where normal style apply
+1800px + :       Big desktop
+*/
+/*
+$breakpoint arguments choice:
+- s-phone
+- M-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.container-1 {
+  padding: 8rem;
+}
+
+@media (max-width: 40em) {
+  .container-1 {
+    padding: 3rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.author-title {
+  color: #fff;
+  font-size: calc(8px + 1.5vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .author-title {
+    font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  padding: 5% 10%;
+  background-image: url("../../../assets/contact/contact_us_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form .form-container {
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form .form-container {
+    margin-left: 0;
+  }
+}
+
+.contact-form .form-container h2 {
+  color: #222222;
+  font-weight: 500;
+}
+
+.contact-form .form-container .input-box {
+  margin-top: 2.5%;
+}
+
+.contact-form .form-container .input-box label {
+  display: block;
+  color: #222222;
+  margin-bottom: 0.5%;
+}
+
+.contact-form .form-container .input-box input {
+  display: block;
+  padding: 15px 16px;
+  color: #222222;
+  width: 500px;
+  outline: 0;
+  border: 2px solid #222222;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form .form-container .input-box input {
+    width: 100%;
+  }
+}
+
+.contact-form .form-container .input-box textarea {
+  font-size: 16px;
+  display: block;
+  outline: 0;
+  padding: 15px 16px;
+  color: #222222;
+  width: 500px;
+  height: 200px;
+  border: 2px solid #222222;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form .form-container .input-box textarea {
+    width: 100%;
+  }
+}
+
+.contact-form .form-container .input-box button {
+  outline: 0;
+  border: 2px solid #222222;
+  background-color: inherit;
+  padding: 0.6em 2.1em;
+  font-size: 18px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact-form .form-container .input-box button:hover {
+  color: #F9CA48;
+  border: 2px solid #F9CA48;
+}
+
+.contact-banner {
+  height: 60vw;
+  background-image: url("../../../assets/images/gcl-header/banner-contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-banner .contact-banner-content {
+  width: 60%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-banner .contact-banner-content {
+    width: 80%;
+  }
+}
+
+.contact-banner .contact-banner-content h2 {
+  color: #fff;
+  font-size: calc(8px + 2vw);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-banner .contact-banner-content h2 {
+    font-size: 16px;
+  }
+}
+
+.contact-banner .contact-banner-content p {
+  font-size: calc(8px + 1vw);
+  margin-top: 2.5%;
+}
+
+.contact-headline {
+  padding: 7.5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-headline h2 {
+  color: #222222;
+  font-size: calc(12px + 2vw);
+}
+
+@media screen and (max-width: 600px) {
+  .contact-headline h2 {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
