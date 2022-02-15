@@ -26,9 +26,33 @@
 </head>
 
 <body>
+    <!-- HEADER START -->
+    <header class="header-section">
+        <nav>
+            <div class="logo-container">
+                <a href="/"><img src="./frontend/assets/gcl_logo.png" alt="gcl-logo"></a>
+            </div>
+            <ul class="nav-links" id="navMenu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/social-business.html">Social Business</a></li>
+                <li><a href="/services.html">Services</a></li>
+                <li><a href="/community.html">Community</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+
+            </ul>
+            <div class="burger">
+                <div class="burger-line line1"></div>
+                <div class="burger-line line2"></div>
+                <div class="burger-line line3"></div>
+            </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
     <section class="press-container">
         <!-- documents -->
-        <div class="documents-container gcl-reveal">
+        <div class="documents-container opacity-animation">
             <h2 class="center">Documents</h2>
             <div class="document-list">
                 <div class="flex">
@@ -52,7 +76,7 @@
             </div>
         </div>
         <!-- logos -->
-        <div class="documents-container top gcl-reveal">
+        <div class="documents-container top opacity-animation">
             <h2 class="center">Logo</h2>
             <div class="document-list">
                 <div class="flex">
@@ -80,45 +104,92 @@
         <div class="documents-container top">
             <h2 class="center">Photo Gallery</h2>
             <div id="app">
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644675530507-f4c9e214dd04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644677851839-af290269c2f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644611390368-6b948e96dbea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644582698270-48c240dfa6f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644419306573-b468b7c636bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644412447376-57f7660a7467?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644447381290-85358ae625cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644469585151-77978a71dfed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1930&q=80" alt="" />
                 </div>
-                <div class="grid-img gcl-reveal">
+                <div class="grid-img opacity-animation">
                     <img src="https://images.unsplash.com/photo-1644447327420-c618c033e4e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="" />
                 </div>
             </div>
         </div>
-    </section>    
+    </section>
+
+    <!-- FOOTER START-->
+    <footer class="footer-container">
+        <div class="footer-body">
+            <div class="grid-common footer-body-left">
+                <div>
+                    <h5>The Grameen Creative Lab</h5>
+                    <p>It is a social business founded by Professor Muhammad Yunus and Hans Reitz. Its vision is to serve society's most pressing needs.</p>
+                </div>
+                <div>
+                    <p>2022 &copy; The Grameen Creative Lab</p>
+                    <a href="/">Privacy policy</a>
+                    <a href="/" class="link-left">Imprint</a>
+                    <a href="/" class="link-left">Press</a>
+                </div>
+            </div>
+            <div class="grid-common footer-body-center">
+                <div>
+                    <h5>Discover more</h5>
+                </div>
+                <div>
+                    <img src="./assets/logo/yunus-center.png" alt="">
+                </div>
+                <div>
+                    <a href="/"><img src="./assets/icons/logo_gcl.png" alt=""></a>
+                    <a href="/" class="link-left"><img src="./assets/icons/logo_environment_hub.png" alt=""></a>
+                    <a href="/" class="link-left"><img src="./assets/icons/logo_sports_hub.png" alt=""></a>
+                </div>
+            </div>
+            <div class="grid-common footer-body-right">
+                <div>
+                    <h5>Follow us</h5>
+                </div>
+                <div class="media-icons">
+                    <a href="/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="/"><i class="fab fa-instagram"></i></a>
+                    <a href="/"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div>
+                    <a href="/"><button>sign up for our newsletter</button></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+
     <!-- scripts -->
     <script src="./frontend/scripts/navbar.js"></script>
     <script src="./frontend/scripts/img-previewer.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./frontend/scripts/scrollAnimation.js"></script>
     <script>
         const a = new ImgPreviewer('body', {
 			scrollbar: true
-		})
-        ScrollReveal({ reset: true }).reveal('.gcl-reveal', { duration: 1500, delay: 250 });
+		});
     </script>
 </body>
 

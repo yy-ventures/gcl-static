@@ -226,7 +226,11 @@
                 width: max-content;
                 justify-self: center;
 
-                .img-container{
+                &__link{
+                    text-decoration: none;
+                    color: $text-dark;
+                }
+                &__img-container{
                     margin-bottom: 1rem;
                 }
 
