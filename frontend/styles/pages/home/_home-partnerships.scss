@@ -1,7 +1,10 @@
 @import "../../global.scss";
 
 .home-partnerships-section{
-    padding: 5%;
+    padding: 5% 5%;
+    @media screen and (max-width: 600px) {
+        padding: 10% 5%;
+    }
     .partnership-header{
         text-align: center;
         h2{

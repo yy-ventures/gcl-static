@@ -73,12 +73,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -160,6 +154,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -231,12 +229,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -318,6 +310,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .join-us-container {
@@ -682,12 +678,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -769,6 +759,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .email-person {
@@ -847,7 +841,8 @@ body {
 
 .email-person .email-person-data a {
   color: #222222;
-  margin-top: 2%;
+  margin-top: 2.5%;
+  font-size: 16px;
 }
 
 /*
@@ -917,12 +912,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {
@@ -1008,6 +997,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .contact-form {
   padding: 5% 10%;
   background-image: url("../../../assets/contact/contact_us_background.png");
@@ -1026,9 +1019,52 @@ body {
   }
 }
 
+.contact-form .form-container .gcl-success {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid #00cc99;
+  background-color: #e6fff9;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.contact-form .form-container .gcl-success p {
+  color: #00cc99;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form .form-container .gcl-success {
+    width: 100%;
+  }
+}
+
+.contact-form .form-container .gcl-error {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid #ff3333;
+  background-color: #ffe6e6;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  text-align: center;
+}
+
+.contact-form .form-container .gcl-error p {
+  color: #ff3333;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form .form-container .gcl-error {
+    width: 100%;
+  }
+}
+
 .contact-form .form-container h2 {
   color: #222222;
   font-weight: 500;
+  font-size: calc(12px + 2vw);
 }
 
 .contact-form .form-container .input-box {
@@ -1039,6 +1075,7 @@ body {
   display: block;
   color: #222222;
   margin-bottom: 0.5%;
+  font-size: 16px;
 }
 
 .contact-form .form-container .input-box input {
@@ -1164,12 +1201,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1254,6 +1285,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -1321,12 +1356,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {
@@ -1661,12 +1690,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1749,6 +1772,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container {

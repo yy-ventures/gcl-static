@@ -71,12 +71,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -159,6 +153,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -230,12 +228,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -320,11 +312,16 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .btn {
   font-size: 2rem;
   padding: 1rem 2rem;
-  border-radius: .5rem;
+  border-radius: 1rem;
   cursor: pointer;
+  font-weight: 500;
 }
 
 @media (max-width: 35.5em) {
@@ -462,12 +459,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -552,6 +543,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -619,12 +614,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {
@@ -959,12 +948,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1047,6 +1030,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container {
@@ -1309,12 +1296,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {

@@ -20,7 +20,7 @@
         }
     }
     .impact-body{
-        padding: 0 5%;
+        padding: 2.5% 5%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         @media screen and (max-width: 600px) {
@@ -31,7 +31,8 @@
             padding: 10% 5%;
             h2{
                 font-weight: 600;
-                font-size: calc(60px + 2vw);
+                font-size: calc(46px + 2vw);
+                //font-size: 72px;
             }
             #impact1{
                 color: $gridOne;
@@ -53,16 +54,17 @@
         }
     }
     .impact-footer{
-        padding: 5%;
+        padding: 2.5% 5%;
         text-align: center;
         a{
             text-decoration: none;
-            padding: 1% 2.5%;
+            padding: 10px 30px;
             border: 2px solid $text-dark;
             color: $text-dark;
             font-size: calc(6px + 1.1vw);
             border-radius: 15px;
             text-transform: uppercase;
+            font-weight: 500;
             transition: 0.3s;
             &:hover{
                 color: $white;

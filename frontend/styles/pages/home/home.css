@@ -76,12 +76,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -163,6 +157,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*
@@ -252,12 +250,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -339,6 +331,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .who-we-are {
@@ -424,7 +420,7 @@ body {
   margin: 0 auto;
   width: 50%;
   text-align: center;
-  padding: 5% 0;
+  padding: 5% 0 7.5% 0;
   position: relative;
 }
 
@@ -482,6 +478,16 @@ body {
   text-align: center;
   display: inline-block;
   height: 100%;
+}
+
+.who-we-are .what-we-do-container .what-we-do-body .path-line svg path {
+  stroke-width: 2;
+}
+
+@media screen and (min-width: 1441px) {
+  .who-we-are .what-we-do-container .what-we-do-body .path-line svg path {
+    stroke-width: 1;
+  }
 }
 
 .who-we-are .what-we-do-container .what-we-do-body .inspire-grid {
@@ -898,12 +904,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -987,6 +987,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -1054,12 +1058,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {
@@ -1146,11 +1144,16 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .btn {
   font-size: 2rem;
   padding: 1rem 2rem;
-  border-radius: .5rem;
+  border-radius: 1rem;
   cursor: pointer;
+  font-weight: 500;
 }
 
 @media (max-width: 35.5em) {
@@ -1247,7 +1250,7 @@ body {
 }
 
 .our-impact-container .impact-body {
-  padding: 0 5%;
+  padding: 2.5% 5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -1268,7 +1271,7 @@ body {
 
 .our-impact-container .impact-body .impact-data h2 {
   font-weight: 600;
-  font-size: calc(60px + 2vw);
+  font-size: calc(46px + 2vw);
 }
 
 .our-impact-container .impact-body .impact-data #impact1 {
@@ -1296,18 +1299,19 @@ body {
 }
 
 .our-impact-container .impact-footer {
-  padding: 5%;
+  padding: 2.5% 5%;
   text-align: center;
 }
 
 .our-impact-container .impact-footer a {
   text-decoration: none;
-  padding: 1% 2.5%;
+  padding: 10px 30px;
   border: 2px solid #222222;
   color: #222222;
   font-size: calc(6px + 1.1vw);
   border-radius: 15px;
   text-transform: uppercase;
+  font-weight: 500;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1394,12 +1398,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1483,6 +1481,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .home-highlight {
   padding: 0 10% 10% 10%;
 }
@@ -1545,7 +1547,7 @@ body {
           transform: translateX(-50%);
   bottom: 10%;
   text-decoration: none;
-  padding: 8px 24px;
+  padding: 6px 36px;
   border: 2px solid #fff;
   color: #fff;
   font-size: 20px;
@@ -1566,6 +1568,7 @@ body {
   .home-highlight .highlight-body .highlight-box a {
     font-size: 12px;
     border-radius: 5px;
+    padding: 6px 24px;
   }
 }
 
@@ -1674,12 +1677,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -1761,6 +1758,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .people-say-container {
@@ -1927,12 +1928,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -2016,8 +2011,18 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .home-partnerships-section {
-  padding: 5%;
+  padding: 5% 5%;
+}
+
+@media screen and (max-width: 600px) {
+  .home-partnerships-section {
+    padding: 10% 5%;
+  }
 }
 
 .home-partnerships-section .partnership-header {
@@ -2146,12 +2151,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -2234,6 +2233,10 @@ body {
   overflow-x: hidden;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+a, button {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer-container {
@@ -2498,12 +2501,6 @@ p {
   color: #222222;
 }
 
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
-}
-
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -2588,6 +2585,10 @@ body {
   margin: 0 auto;
 }
 
+a, button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /*
 0 - 430px;       small-phone
 430 - 568px:     medium-phone
@@ -2655,12 +2656,6 @@ h6 {
 
 p {
   color: #222222;
-}
-
-@media screen and (max-width: 600px) {
-  p {
-    font-size: 16px;
-  }
 }
 
 .mb-1 {
