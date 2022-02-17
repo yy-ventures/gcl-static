@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./frontend/styles/pages/about/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -64,7 +65,7 @@
                 </div>
             </div>
             <div class="about__us--info">
-                <div class="info-1 text-container" id="history">
+                <div class="info-1 text-container" id="history" data-aos="fade-right" data-aos-duration="1000">
                     <h3 class="mb-2">Our History</h3>
                     <div class="content">
                         <p>In April 2008, Professor Muhammad Yunus visited Germany. A first contact between Grameen and BASF, one of Hans Reitz's clients, was established. Together with Mr. Hambrecht, CEO of BASF, they developed an idea of a Joint Venture between BASF and Grameen.</p>
@@ -73,10 +74,10 @@
                         <p>The Grameen Creative Lab is a Grameen Social Business itself. We finance ourselves through the products and services within each pillar. Any profits will be reinvested into further accelerating Grameen Social Business and sharing Grameen’s and Professor Yunus’ concepts and ideas with companies, universities, NGOs, students, investors and more.</p>
                     </div>
                 </div>
-                <div class="image-1 img-container">
+                <div class="image-1 img-container" data-aos="fade-left" data-aos-duration="1000">
                     <img src="/frontend/assets/images/about_1.jpg" alt="image 1" class="img">
                 </div>
-                <div class="info-2 text-container" id="vision">
+                <div class="info-2 text-container" id="vision" data-aos="fade-right" data-aos-duration="1000">
                     <h3 class="mb-2">Our vision, mission & values</h3>
                     <div class="content">
                         <p>Through creating an ecosystem where social business flourishes and solves the most pressing problems of our times, we are paving the way for a world of three zeroes-zero poverty, zero unemployment and zero net carbon emissions.</p>
@@ -84,16 +85,16 @@
                         <p>Our 3 core values are bold, competitive and creative. True to the principles of social business, we encourage product offerings that can compete in the market, we believe in applied creativity and innovation to solve problems and we bring brevity, transparency and honesty to all that we do.</p>
                     </div>
                 </div>
-                <div class="image-2 img-container">
+                <div class="image-2 img-container" data-aos="fade-left" data-aos-duration="1000">
                     <img src="/frontend/assets/images/about_2.jpg" alt="image 1" class="img">
                 </div>
-                <div class="info-3 text-container" id="spirit">
+                <div class="info-3 text-container" id="spirit" data-aos="fade-right" data-aos-duration="1000">
                     <h3 class="mb-2">The Spirit of YY Yunus + Your Mission</h3>
                     <div class="content">
                         <p>With the tools created by Professor Muhammad Yunus, You can create an impact! We live by our principle of social business and "do it with joy". This creative and entrepreneurial spirit, along with our expertise and know-how accumulated over the years helps us to create the most innovative solutions to social problems.</p>
                     </div>
                 </div>
-                <div class="image-3 img-container">
+                <div class="image-3 img-container" data-aos="fade-left" data-aos-duration="1000">
                     <img src="/frontend/assets/images/about_3.jpg" alt="image 1" class="img">
                 </div>                
             </div>
@@ -201,14 +202,14 @@
         <!-- FAMILY SECTION END -->
         <section class="about__family container-1" id="family">
             <h3 class="about__team--heading opacity-animation">Our family</h3>
-            <div class="about__family--logo-container opacity-animation">
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yunus_centre-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yunus_environment_hub-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yunus_sports_hub-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yygoshti-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yyventures-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/zero_club-logo.png" alt="family logo"></a>
-                <a href="#"><img class="logo" src="/frontend/assets/logo/yunus_social_business-logo.png" alt="family logo"></a>
+            <div class="about__family--logo-container">
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yunus_centre-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yunus_environment_hub-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yunus_sports_hub-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yygoshti-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yyventures-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/zero_club-logo.png" alt="family logo"></a>
+                <a href="#"><img class="logo opacity-animation" src="/frontend/assets/logo/yunus_social_business-logo.png" alt="family logo"></a>
             </div>
         </section>
 
@@ -269,5 +270,10 @@
     <script src="./frontend/scripts/counterNumber.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./frontend/scripts/scrollAnimation.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({reset: false});
+    </script>
 </body>
 </html>
