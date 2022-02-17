@@ -1617,8 +1617,8 @@ p {
 .about__team--container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(18rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  -ms-grid-columns: (minmax(18rem, 1fr))[5];
+      grid-template-columns: repeat(5, minmax(18rem, 1fr));
   grid-gap: 2rem;
   margin: 4% auto 0 auto;
 }
