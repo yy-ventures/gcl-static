@@ -1670,7 +1670,12 @@ p {
       justify-self: center;
 }
 
-.about__team--container .member .img-container {
+.about__team--container .member__link {
+  text-decoration: none;
+  color: #222222;
+}
+
+.about__team--container .member__img-container {
   margin-bottom: 1rem;
 }
 

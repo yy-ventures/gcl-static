@@ -1,0 +1,70 @@
+@import '../../base/base-style.scss';
+
+@import '../../components/header';
+@import '../../components/button';
+@import '../../components/footer';
+
+@import '../../sass/mixins';
+@import '../../sass/typography';
+@import '../../sass/variables';
+
+.imprint{
+    .container-imprint{
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+    padding: 0 4rem;
+
+    &__media{
+        border-bottom: 1px solid $grey;
+        margin-top: 2rem;
+        
+        .container{
+            padding: 2.4rem 0;
+
+            display: flex;
+            justify-content: space-between;
+
+            .link-container{
+
+                display: flex;
+                gap: 2rem;
+
+                &__label{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    align-self: center;
+                }
+                &__icon-container{
+                    font-size: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    .icon{
+                        background-color: $grey;
+                        text-decoration: none;
+                        color: $white;
+                        height: 3.6rem;
+                        width: 3.6rem;
+                        border-radius: 50%;
+
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &__info{
+        font-size: 2rem;
+        padding: 4rem 0;
+
+        p:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}
